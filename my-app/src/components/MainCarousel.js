@@ -6,7 +6,7 @@ import Carousel from 'react-bootstrap/Carousel';
 function MainCarousel() {
   return (
     <div className='MainCarousel'>
-        <Carousel>
+        <Carousel interval='5000'>
         <Carousel.Item>
             <img
             className="d-block w-100"
