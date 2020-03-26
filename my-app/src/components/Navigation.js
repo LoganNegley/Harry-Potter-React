@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function App() {
+function Navigation() {
   return (
     <div className="navbar-container">
         <div className='Logo'>Logo goes here!!!!</div>
@@ -14,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export default Navigation;
