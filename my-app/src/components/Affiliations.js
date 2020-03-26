@@ -1,8 +1,11 @@
 import React from 'react';
+import MainCarousel from '../components/MainCarousel';
 
 
 function Affiliations() {
   return (
+    <>
+    <MainCarousel/>
     <div className="affiliations-container">
         <section>
             <h3>Dumbledore's Army</h3>
@@ -19,8 +22,8 @@ function Affiliations() {
             <p>image goes here</p>
             <button>Whos part of the Ministry Of Magic</button>
         </section>
-
     </div>
+    </>
   );
 }
 
