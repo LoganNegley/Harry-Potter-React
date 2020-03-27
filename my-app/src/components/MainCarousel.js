@@ -5,12 +5,12 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function MainCarousel() {
   return (
-    <div className='MainCarousel'>
+    <div className='mainCarousel'>
         <Carousel interval='5000'>
         <Carousel.Item>
             <img
             className="d-block w-100"
-            src="holder.js/800x400?text=First slide&bg=373940"
+            src={require('../images/papers')}
             alt="First slide"
             />
             <Carousel.Caption>

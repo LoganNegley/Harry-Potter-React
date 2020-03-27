@@ -2,19 +2,19 @@
   color:white;
   width:75%;
   margin: 0 auto;
+  background-color:#4D0505;
 }
 
 .navbar-container{
   height:150px;
   margin:5rem 0;
-  background-color:#4D0505;
+
   display:flex;
   justify-content:flex-end;
 }
 
 .navbar-container nav{
 display:flex;
-/* justify-content: flex-end; */
 align-items:flex-end;
 
 
@@ -27,6 +27,12 @@ nav button{
   width:10rem;
   padding:.5rem;
   margin-bottom:2rem;
+  font-family: 'Merienda', cursive;
   
+}
+
+/* Main Carousel */
+.mainCarousel{
+  height:400px;
 }
 
