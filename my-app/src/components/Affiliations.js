@@ -22,17 +22,17 @@ function Affiliations() {
           </div>
         </section>
         <section>
+          <div className='quote'>
+            <p>"You're a little scary sometimes, you know that? Brilliant...but scary"<br/>
+             ― Ron Weasley</p>
+            <button>Whos in the Order Of The Phoenix</button>
+          </div>
           <div className='img'>
             <img
               className='phoenix-img'
               src='images/harry.jfif'
               alt='Harry and the Phoenix'
             />
-          </div>
-          <div className='quote'>
-            <p>"You're a little scary sometimes, you know that? Brilliant...but scary"<br/>
-             ― Ron Weasley</p>
-            <button>Whos in the Order Of The Phoenix</button>
           </div>
         </section>
         <section>
