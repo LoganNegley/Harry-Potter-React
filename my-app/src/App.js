@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-// import './App.css';
+import './App.css';
 
 import Navigation from '../src/components/Navigation';
 import Affiliations from '../src/components/Affiliations';
