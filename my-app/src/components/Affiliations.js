@@ -16,7 +16,8 @@ function Affiliations() {
             />
           </div>
           <div className='quote'>
-            <p>"Happines</p>
+            <p>"Happiness can be found, even in the darkest of times, if one only remembers to turn on the light"<br/>
+             ― Albus Dumbledore</p>
             <button>Whos in Dubledore's Army</button>
           </div>
         </section>
@@ -29,7 +30,8 @@ function Affiliations() {
             />
           </div>
           <div className='quote'>
-            <p>quote</p>
+            <p>"You're a little scary sometimes, you know that? Brilliant...but scary"<br/>
+             ― Ron Weasley</p>
             <button>Whos in the Order Of The Phoenix</button>
           </div>
         </section>
@@ -42,7 +44,7 @@ function Affiliations() {
             />
           </div>
           <div className='quote'>
-            <p>quote</p>
+            <p>"I solemnly swear I am up to no good."<br/> ― Harry Potter</p>
             <button>Whos part of the Ministry Of Magic</button>
           </div>
         </section>

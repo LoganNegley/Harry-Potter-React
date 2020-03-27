@@ -42,4 +42,29 @@ nav button{
 }
 
 .affiliations-container section{
+  display:flex;
 }
+
+.affiliations-container .img{
+height:250px;
+width:40%;
+margin:6rem;
+}
+
+.affiliations-container .img img{
+  width:100%;
+}
+
+.affiliations-container .quote{
+  text-align:center;
+  margin:6rem auto;
+}
+
+.affiliations-container .quote p{
+  font-family: 'Marck Script', cursive;
+  /* width:60%; */
+  font-size:2rem;
+}
+
+
+
