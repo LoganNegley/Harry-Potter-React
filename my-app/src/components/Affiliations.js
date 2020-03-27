@@ -37,7 +37,8 @@ function Affiliations() {
             <div className='img'>
             <img
               className='ministry-img'
-              scr='images/ministry.jfif'
+              src='images/ministry.jfif'
+              alt='member of ministry'
             />
           </div>
           <div className='quote'>
