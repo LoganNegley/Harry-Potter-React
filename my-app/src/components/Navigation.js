@@ -4,7 +4,7 @@ import React from 'react';
 function Navigation() {
   return (
     <div className="navbar-container">
-        <div className='Logo'>Logo goes here!!!!</div>
+        <div className='logo'>Logo goes here!!!!</div>
         <nav>
             <button>Home</button>
             <button>Sorting Hat</button>
