@@ -29,10 +29,19 @@ function MainCarousel() {
         <Carousel.Item>
             <img
             className="d-block w-100"
-            src="images/ron.jfif"
+            src="images/train.jpg"
             alt="Third slide"
             />
 
+            <Carousel.Caption>
+            </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+            className="d-block w-100"
+            src='images/car.jpg'
+            alt="Fourth slide"
+            />
             <Carousel.Caption>
             </Carousel.Caption>
         </Carousel.Item>
