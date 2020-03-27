@@ -6,7 +6,7 @@
 }
 
 .navbar-container{
-  height:150px;
+  height:125px;
   margin-bottom: 5rem;
 
   display:flex;
@@ -16,8 +16,6 @@
 .navbar-container nav{
 display:flex;
 align-items:flex-end;
-
-
 }
 
 nav button{
@@ -33,5 +31,21 @@ nav button{
 
 /* Main Carousel */
 .carousel img {
-  height:350px; }
+  height:350px; 
+}
 
+/* Affiliation Component */
+
+.affiliations-container{
+  border:solid 2px yellow;
+  margin-top:4rem;
+}
+
+.affiliations-container section{
+
+  height:100px;
+}
+
+.affiliations-container div{
+  display:flex;
+}
