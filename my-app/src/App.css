@@ -32,7 +32,6 @@ nav button{
 }
 
 /* Main Carousel */
-.mainCarousel{
-  height:400px;
-}
+.carousel img {
+  height:400px; }
 
