@@ -39,8 +39,17 @@ function MainCarousel() {
         <Carousel.Item>
             <img
             className="d-block w-100"
-            src='images/car.jpg'
+            src='images/castle.jpg'
             alt="Fourth slide"
+            />
+            <Carousel.Caption>
+            </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+            className="d-block w-100"
+            src='images/car.jpg'
+            alt="Fifth slide"
             />
             <Carousel.Caption>
             </Carousel.Caption>

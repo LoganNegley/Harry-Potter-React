@@ -7,7 +7,7 @@
 
 .navbar-container{
   height:150px;
-  margin:5rem 0;
+  margin-bottom: 5rem;
 
   display:flex;
   justify-content:flex-end;
@@ -33,5 +33,5 @@ nav button{
 
 /* Main Carousel */
 .carousel img {
-  height:400px; }
+  height:350px; }
 
