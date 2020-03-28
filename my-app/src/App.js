@@ -6,13 +6,13 @@ import Navigation from '../src/components/Navigation';
 import Affiliations from '../src/components/Affiliations';
 import SortingHat from '../src/components/SortingHat';
 import Footer from '../src/components/Footer';
+import Express from '../src/components/Express';
 
 function App() {
   const [characters, setCharacters] = useState([]);
 
 
   return (
-<>
   <div className='App'>
       <Navigation/>
 
@@ -24,9 +24,12 @@ function App() {
       <SortingHat/>
     </Route>
 
+    <Route path='/hogwarts-express'>
+      <Express/>
+    </Route>
+
     <Footer/>
   </div>
-</>
   );
 }
 

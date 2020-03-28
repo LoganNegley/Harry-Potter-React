@@ -1,4 +1,6 @@
-
+.App{
+  color:white;
+}
 /* Navigation component */
 .logo{
   font-size:4.25rem;

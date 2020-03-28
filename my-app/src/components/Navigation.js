@@ -11,10 +11,12 @@ function Navigation() {
           <Link to='/'>
             <button>Home</button>
           </Link>
-          <Link to='sorting-hat'>
+          <Link to='/sorting-hat'>
             <button>Sorting Hat</button>
           </Link>
-          <button>Hogwarts Express</button>
+          <Link to='/hogwarts-express'>
+            <button>Hogwarts Express</button>
+          </Link>
       </nav>
     </div>
     </>
