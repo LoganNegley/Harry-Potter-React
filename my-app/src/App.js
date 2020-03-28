@@ -34,11 +34,11 @@ useEffect(() => {
 
     <Route exact path='/' render={props => <Affiliations {...props} characters={characters}/>}/>
 
-    <Route exact path='/dumbldore-army' render={props => <DbArmy {...props} characters={characters}/>}/>
+    <Route path='/dumbldore-army' render={props => <DbArmy {...props} characters={characters}/>}/>
 
-     <Route exact path='/order-of-phoenix' render={props => <PhoenixCharacters {...props} characters={characters}/>}/>
+     <Route path='/order-of-phoenix' render={props => <PhoenixCharacters {...props} characters={characters}/>}/>
 
-     <Route exact path='/ministry-of-magic' render={props => <MinistryCharacters {...props} characters={characters}/>}/>
+     <Route path='/ministry-of-magic' render={props => <MinistryCharacters {...props} characters={characters}/>}/>
 
 
     <Route path='/sorting-hat'>

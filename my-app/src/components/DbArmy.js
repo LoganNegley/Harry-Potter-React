@@ -1,10 +1,11 @@
 import React from 'react';
 
 
-function DbArmy() {
+function DbArmy(props) {
+  console.log(props)
   return (
     <div className="dumbledore-army-container">
-        Dumbledore Army Here
+        <h2>DB Army</h2>
     </div>
   );
 }
