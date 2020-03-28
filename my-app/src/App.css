@@ -6,10 +6,19 @@
 }
 /* Navigation component */
 .logo{
-  font-size:4rem;
+  font-size:4.25rem;
   text-align: center;
   font-family: 'Cinzel', serif;
+  animation: invisible 3s infinite alternate;
+}
 
+@keyframes invisible {
+  0%{
+    opacity:1;
+  }
+  100%{
+  opacity:0;
+}
 }
 
 .navbar-container{
