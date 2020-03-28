@@ -1,5 +1,6 @@
 import React from 'react';
 import MainCarousel from '../components/MainCarousel';
+import {Link} from 'react-router-dom';
 
 
 function Affiliations() {
@@ -19,14 +20,18 @@ function Affiliations() {
           <div className='quote'>
             <p>"Happiness can be found, even in the darkest of times, if one only remembers to turn on the light"<br/>
              ― Albus Dumbledore</p>
-            <button>Whos in Dubledore's Army</button>
+            <Link to='/dumbledore-army'>
+              <button>Whos in Dumbledore's Army</button>
+            </Link>
           </div>
         </section>
         <section>
           <div className='quote'>
             <p>"You're a little scary sometimes, you know that? Brilliant...but scary"<br/>
              ― Ron Weasley</p>
-            <button>Whos in the Order Of The Phoenix</button>
+            <Link to='order-of-phoenix'>
+              <button>Whos in the Order Of The Phoenix</button>
+            </Link>
           </div>
           <div className='img'>
             <img
@@ -46,7 +51,9 @@ function Affiliations() {
           </div>
           <div className='quote'>
             <p>"I solemnly swear I am up to no good."<br/> ― Harry Potter</p>
-            <button>Whos part of the Ministry Of Magic</button>
+            <Link to='ministry-of-magic'>
+              <button>Whos part of the Ministry Of Magic</button>
+            </Link>
           </div>
         </section>
     </div>

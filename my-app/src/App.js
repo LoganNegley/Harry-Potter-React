@@ -8,6 +8,7 @@ import Affiliations from '../src/components/Affiliations';
 import SortingHat from '../src/components/SortingHat';
 import Footer from '../src/components/Footer';
 import Express from '../src/components/Express';
+import DbArmy from '../src/components/DbArmy';
 
 function App() {
 const [characters, setCharacters] = useState({});
@@ -29,17 +30,18 @@ useEffect(() => {
   <div className='App'>
       <Navigation/>
 
-    <Route exact path='/'>
-       <Affiliations/>
-    </Route>
+    <Route exact path='/' render={props => <Affiliations {...props} characters={characters}/>}/>
+
+    <Route exact path='/dumbldore-army' render={props => <DbArmy {...props} characters={characters}/>}/>
+
+     <Route exact path='/order-of-phoenix' render={props => <OrderOfPhoenix {...props} characters={characters}/>}/>
+
 
     <Route path='/sorting-hat'>
       <SortingHat/>
     </Route>
 
-    <Route path='/hogwarts-express'>
-      <Express/>
-    </Route>
+    <Route path='/hogwarts-express' render={props => <Express {...props} characters={characters}/>}/>
 
     <Footer/>
   </div>
