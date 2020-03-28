@@ -12,16 +12,18 @@ import Express from '../src/components/Express';
 function App() {
 const [characters, setCharacters] = useState({});
 
+
 useEffect(() => {
   axios.get('https://www.potterapi.com/v1/characters?key=$2a$10$Q4u.rpQuXNlJGGU3sga/g.iojAEbxt6kaul2QD6wr.ZqH9u6oh2fS')
   .then(response => {
-    console.log(response);
+    setCharacters(response.data);
   })
   .catch(error =>{
     console.log(error, 'error getting response from api get')
   })
 },[]);
 
+ console.log(characters)
 
   return (
   <div className='App'>
