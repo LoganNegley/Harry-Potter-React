@@ -7,6 +7,7 @@ function Affiliations() {
     <>
     <MainCarousel/>
     <div className="affiliations-container">
+      <h2>Welcome Muggles to the Hogwarts world of witchcraft and wizardry</h2>
         <section>
           <div className='img'>
             <img

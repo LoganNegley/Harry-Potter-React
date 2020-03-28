@@ -13,7 +13,7 @@ function App() {
 const [characters, setCharacters] = useState({});
 
 useEffect(() => {
-  axios.get('https://www.potterapi.com/v1/?key=$2a$10$Q4u.rpQuXNlJGGU3sga/g.iojAEbxt6kaul2QD6wr.ZqH9u6oh2fS')
+  axios.get('https://www.potterapi.com/v1/characters?key=$2a$10$Q4u.rpQuXNlJGGU3sga/g.iojAEbxt6kaul2QD6wr.ZqH9u6oh2fS')
   .then(response => {
     console.log(response);
   })
