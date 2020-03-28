@@ -1,11 +1,11 @@
 import React from 'react';
+import CharacterCard from '../components/CharacterCard';
 
 
 function DumbledoreArmy(props) {
-  console.log(props)
   return (
     <div className="dumbledore-army-container">
-        <h2>DB Army</h2>
+        <CharacterCard characters={props.characters}/>
     </div>
   );
 }

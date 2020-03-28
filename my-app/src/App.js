@@ -13,7 +13,7 @@ import PhoenixCharacters from '../src/components/PhoenixCharacters';
 import MinistryCharacters from '../src/components/MinistryCharacters';
 
 function App() {
-const [characters, setCharacters] = useState({});
+const [characters, setCharacters] = useState([]);
 
 
 useEffect(() => {
