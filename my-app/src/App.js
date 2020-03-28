@@ -8,7 +8,7 @@ import Affiliations from '../src/components/Affiliations';
 import SortingHat from '../src/components/SortingHat';
 import Footer from '../src/components/Footer';
 import Express from '../src/components/Express';
-import DbArmy from '../src/components/DbArmy';
+import DumbledoreArmy from '../src/components/DumbledoreArmy';
 import PhoenixCharacters from '../src/components/PhoenixCharacters';
 import MinistryCharacters from '../src/components/MinistryCharacters';
 
@@ -34,7 +34,7 @@ useEffect(() => {
 
     <Route exact path='/' render={props => <Affiliations {...props} characters={characters}/>}/>
 
-    <Route path='/dumbldore-army' render={props => <DbArmy {...props} characters={characters}/>}/>
+    <Route path='/dumbledore-army' render={props => <DumbledoreArmy {...props} characters={characters}/>}/>
 
      <Route path='/order-of-phoenix' render={props => <PhoenixCharacters {...props} characters={characters}/>}/>
 

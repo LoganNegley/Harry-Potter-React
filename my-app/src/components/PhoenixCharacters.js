@@ -1,6 +1,6 @@
 import React from 'react';
 
-function PhoenixCharacters() {
+function PhoenixCharacters(props) {
   return (
     <div className="orderOfPhoenix-container">
     Phoenix

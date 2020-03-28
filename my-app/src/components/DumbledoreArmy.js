@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function DbArmy(props) {
+function DumbledoreArmy(props) {
   console.log(props)
   return (
     <div className="dumbledore-army-container">
@@ -10,4 +10,4 @@ function DbArmy(props) {
   );
 }
 
-export default DbArmy;
+export default DumbledoreArmy;
