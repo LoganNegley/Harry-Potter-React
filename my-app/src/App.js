@@ -9,6 +9,8 @@ import SortingHat from '../src/components/SortingHat';
 import Footer from '../src/components/Footer';
 import Express from '../src/components/Express';
 import DbArmy from '../src/components/DbArmy';
+import PhoenixCharacters from '../src/components/PhoenixCharacters';
+import MinistryCharacters from '../src/components/MinistryCharacters';
 
 function App() {
 const [characters, setCharacters] = useState({});
@@ -34,7 +36,9 @@ useEffect(() => {
 
     <Route exact path='/dumbldore-army' render={props => <DbArmy {...props} characters={characters}/>}/>
 
-     <Route exact path='/order-of-phoenix' render={props => <OrderOfPhoenix {...props} characters={characters}/>}/>
+     <Route exact path='/order-of-phoenix' render={props => <PhoenixCharacters {...props} characters={characters}/>}/>
+
+     <Route exact path='/ministry-of-magic' render={props => <MinistryCharacters {...props} characters={characters}/>}/>
 
 
     <Route path='/sorting-hat'>
