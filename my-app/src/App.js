@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { Route, Switch } from 'react-router-dom';
+import axios from 'axios';
 import './App.css';
 
 import Navigation from '../src/components/Navigation';
@@ -9,7 +10,17 @@ import Footer from '../src/components/Footer';
 import Express from '../src/components/Express';
 
 function App() {
-  const [characters, setCharacters] = useState([]);
+const [characters, setCharacters] = useState({});
+
+useEffect(() => {
+  axios.get('https://www.potterapi.com/v1/?key=$2a$10$Q4u.rpQuXNlJGGU3sga/g.iojAEbxt6kaul2QD6wr.ZqH9u6oh2fS')
+  .then(response => {
+    console.log(response);
+  })
+  .catch(error =>{
+    console.log(error, 'error getting response from api get')
+  })
+},[]);
 
 
   return (
