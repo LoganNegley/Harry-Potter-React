@@ -29,6 +29,7 @@
 .navbar-container nav{
 display:flex;
 width:70%;
+margin-right:4rem;
 }
 
 nav button{
