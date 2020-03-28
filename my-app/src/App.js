@@ -5,6 +5,7 @@ import './App.css';
 import Navigation from '../src/components/Navigation';
 import Affiliations from '../src/components/Affiliations';
 import SortingHat from '../src/components/SortingHat';
+import Footer from '../src/components/Footer';
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -12,6 +13,7 @@ function App() {
 
   return (
 <>
+  <div className='App'>
       <Navigation/>
 
     <Route exact path='/'>
@@ -22,6 +24,8 @@ function App() {
       <SortingHat/>
     </Route>
 
+    <Footer/>
+  </div>
 </>
   );
 }

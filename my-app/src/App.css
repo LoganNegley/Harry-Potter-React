@@ -1,9 +1,4 @@
-.App{
-  color:white;
-  width:75%;
-  margin: 0 auto;
 
-}
 /* Navigation component */
 .logo{
   font-size:4.25rem;
@@ -57,6 +52,15 @@ nav button{
 
 .affiliations-container section{
   display:flex;
+}
+
+.affiliations-container section:last-of-type{
+  margin-left:3rem;
+  margin-bottom:3rem;
+}
+
+.affiliations-container section:nth-of-type(1){
+  margin-left:3rem;
 }
 
 .affiliations-container .img{
