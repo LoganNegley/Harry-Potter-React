@@ -4,6 +4,7 @@ import './App.css';
 
 import Navigation from '../src/components/Navigation';
 import Affiliations from '../src/components/Affiliations';
+import SortingHat from '../src/components/SortingHat';
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -12,8 +13,14 @@ function App() {
   return (
 <>
       <Navigation/>
-      <Affiliations/>
 
+    <Route exact path='/'>
+       <Affiliations/>
+    </Route>
+
+    <Route path='/sorting-hat'>
+      <SortingHat/>
+    </Route>
 
 </>
   );
