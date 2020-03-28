@@ -3,14 +3,16 @@ import React from 'react';
 
 function Navigation() {
   return (
+    <>
+    <div className='logo'>The Invisibility Cloak</div>
     <div className="navbar-container">
-        <div className='logo'>Logo goes here!!!!</div>
-        <nav>
-            <button>Home</button>
-            <button>Sorting Hat</button>
-            <button>Hogwarts Express</button>
-        </nav>
+      <nav>
+          <button>Home</button>
+          <button>Sorting Hat</button>
+          <button>Hogwarts Express</button>
+      </nav>
     </div>
+    </>
   );
 }
 
