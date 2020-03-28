@@ -1,9 +1,11 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import {Spinner} from 'reactstrap';
+import {CharacterContext} from '../context/CharacterContext';
 
 
-function CharacterCard(props) {
+function CharacterCard() {
 
+const characters = useContext(CharacterContext);
   
 
   return (

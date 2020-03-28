@@ -3,6 +3,9 @@ import { Route, Switch } from 'react-router-dom';
 import axios from 'axios';
 import './App.css';
 
+//Contexts
+import {CharacterContext} from '../src/context/CharacterContext';
+//Components
 import Navigation from '../src/components/Navigation';
 import Affiliations from '../src/components/Affiliations';
 import SortingHat from '../src/components/SortingHat';
@@ -15,7 +18,7 @@ import MinistryCharacters from '../src/components/MinistryCharacters';
 function App() {
 const [characters, setCharacters] = useState([]);
 
-
+//Character fetch from API
 useEffect(() => {
   axios.get('https://www.potterapi.com/v1/characters?key=$2a$10$Q4u.rpQuXNlJGGU3sga/g.iojAEbxt6kaul2QD6wr.ZqH9u6oh2fS')
   .then(response => {
@@ -30,6 +33,8 @@ useEffect(() => {
 
   return (
   <div className='App'>
+  <CharacterContext.Provider value={characters}>
+  
       <Navigation/>
 
     <Route exact path='/' render={props => <Affiliations {...props} characters={characters}/>}/>
@@ -48,6 +53,7 @@ useEffect(() => {
     <Route path='/hogwarts-express' render={props => <Express {...props} characters={characters}/>}/>
 
     <Footer/>
+  </CharacterContext.Provider>
   </div>
   );
 }
