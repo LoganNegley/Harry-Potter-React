@@ -16,7 +16,7 @@ import PhoenixCharacters from '../src/components/PhoenixCharacters';
 import MinistryCharacters from '../src/components/MinistryCharacters';
 
 function App() {
-const [characters, setCharacters] = useState([]);
+const [characters, setCharacters] = useState(null);
 
 //Character fetch from API
 useEffect(() => {
@@ -29,28 +29,26 @@ useEffect(() => {
   })
 },[]);
 
- console.log(characters)
-
   return (
   <div className='App'>
   <CharacterContext.Provider value={characters}>
   
       <Navigation/>
 
-    <Route exact path='/' render={props => <Affiliations {...props} characters={characters}/>}/>
+    <Route exact path='/' render={props => <Affiliations {...props}/>}/>
 
-    <Route path='/dumbledore-army' render={props => <DumbledoreArmy {...props} characters={characters}/>}/>
+    <Route path='/dumbledore-army' render={props => <DumbledoreArmy {...props}/>}/>
 
-     <Route path='/order-of-phoenix' render={props => <PhoenixCharacters {...props} characters={characters}/>}/>
+     <Route path='/order-of-phoenix' render={props => <PhoenixCharacters {...props}/>}/>
 
-     <Route path='/ministry-of-magic' render={props => <MinistryCharacters {...props} characters={characters}/>}/>
+     <Route path='/ministry-of-magic' render={props => <MinistryCharacters {...props}/>}/>
 
 
     <Route path='/sorting-hat'>
       <SortingHat/>
     </Route>
 
-    <Route path='/hogwarts-express' render={props => <Express {...props} characters={characters}/>}/>
+    <Route path='/hogwarts-express' render={props => <Express {...props}/>}/>
 
     <Footer/>
   </CharacterContext.Provider>
