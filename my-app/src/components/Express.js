@@ -5,7 +5,6 @@ import {Spinner} from 'reactstrap';
 
 function Express() {
 const characters = useContext(CharacterContext);
-console.log(characters.id)
 
   return (
     <div className="hogwartsExpress-container">
@@ -14,9 +13,6 @@ console.log(characters.id)
       : characters.map(character =>(
       <div className='express-character-card'>
         <h1>{character.name}</h1>
-        <Link to={`/hogwarts-express/${characters.id}`}>
-          <button>Who's This?</button>
-        </Link>
       </div>
        ))}
     </div>
