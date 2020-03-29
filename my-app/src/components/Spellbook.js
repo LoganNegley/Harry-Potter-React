@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
+import {Spinner} from 'reactstrap';
 
 
 function Navigation() {
@@ -23,7 +24,11 @@ useEffect(()=>{
 
   return (
     <div className="spellbook-container">
-
+      {!spells 
+      ?  <Spinner style={{ width: '3rem', height: '3rem', color:'yellow' }} type="grow" /> 
+      : spells.map(item =>(
+        <p>{item.spell}</p>
+       ))}
     </div>
   );
 }
