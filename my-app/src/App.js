@@ -14,6 +14,7 @@ import Express from '../src/components/Express';
 import DumbledoreArmy from '../src/components/DumbledoreArmy';
 import PhoenixCharacters from '../src/components/PhoenixCharacters';
 import MinistryCharacters from '../src/components/MinistryCharacters';
+import Spellbook from '../src/components/Spellbook';
 
 
 function App() {
@@ -39,11 +40,12 @@ useEffect(() => {
     <Route path='/dumbledore-army' render={props => <DumbledoreArmy {...props}/>}/>
     <Route path='/order-of-phoenix' render={props => <PhoenixCharacters {...props}/>}/>
     <Route path='/ministry-of-magic' render={props => <MinistryCharacters {...props}/>}/>
+     <Route exact path='/spellbook' render={props => <Spellbook {...props}/>}/>
 
     <Route path='/sorting-hat'>
       <SortingHat/>
     </Route>
-    
+
     <Route path='/hogwarts-express' render={props => <Express {...props}/>}/>
 
     <Footer/>

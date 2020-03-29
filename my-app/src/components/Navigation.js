@@ -17,6 +17,9 @@ function Navigation() {
           <Link to='/hogwarts-express'>
             <button>Hogwarts Express</button>
           </Link>
+          <Link to='/spellbook'>
+            <button>Spellbook</button>
+          </Link>
       </nav>
     </div>
     </>

@@ -19,7 +19,6 @@
 }
 
 .navbar-container{
-  /* height:10rem; */
   display:flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -27,16 +26,14 @@
 }
 
 .navbar-container nav{
-display:flex;
-width:70%;
-margin-right:4rem;
+margin:0 auto;
 }
 
 nav button{
   margin:0 1rem;
   background-color:#F3C01B;
   border:none;
-  width:15rem;
+  width:13rem;
   padding:.25rem;
   margin-bottom:2rem;
   font-family: 'Merienda', cursive;
