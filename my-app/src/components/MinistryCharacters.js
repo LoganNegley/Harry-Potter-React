@@ -1,9 +1,20 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import CharacterCard from '../components/CharacterCard';
+import {CharacterContext} from '../context/CharacterContext';
+import {Spinner} from 'reactstrap';
+
 
 function Ministry() {
+  const characters = useContext(CharacterContext);
+
   return (
     <div className="orderOfPhoenix-container">
-    Ministry
+      {!characters 
+      ?  <Spinner style={{ width: '3rem', height: '3rem', color:'yellow' }} type="grow" /> 
+      : characters.map(character =>(
+        character.ministryOfMagic === true &&
+        <CharacterCard character={character}/>
+       ))}
     </div>
   );
 }
