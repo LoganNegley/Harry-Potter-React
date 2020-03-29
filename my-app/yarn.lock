@@ -4491,6 +4491,14 @@ flatten@^1.0.2:
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.3.tgz#c1283ac9f27b368abc1e36d1ff7b04501a30356b"
   integrity sha512-dVsPA/UwQ8+2uoFe5GHtiBMu48dWLTdsuEd7CKGlZlD78r1TTWBvDuFaFGKCo/ZfEr95Uk56vZoX86OsHkUeIg==
 
+flipping-pages@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/flipping-pages/-/flipping-pages-2.1.3.tgz#c6c3ccdf2a8f76aefcdec2f5b5fffc22b37c5654"
+  integrity sha512-dUI+m5IJKIr6l/C7oHhxdEG2JauIAqJAmXd6pN0fZQ7SsPlxWnt3Q4DbTuitAACchrgODP27bmV4UddV5pdGsA==
+  dependencies:
+    classnames "^2.2.6"
+    prop-types "^15.6.2"
+
 flush-write-stream@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/flush-write-stream/-/flush-write-stream-1.1.1.tgz#8dd7d873a1babc207d94ead0c2e0e44276ebf2e8"
