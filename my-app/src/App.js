@@ -14,6 +14,7 @@ import Express from '../src/components/Express';
 import DumbledoreArmy from '../src/components/DumbledoreArmy';
 import PhoenixCharacters from '../src/components/PhoenixCharacters';
 import MinistryCharacters from '../src/components/MinistryCharacters';
+import ExpressCard from '../src/components/ExpressCard';
 
 function App() {
 const [characters, setCharacters] = useState(null);
@@ -49,6 +50,7 @@ useEffect(() => {
     </Route>
 
     <Route path='/hogwarts-express' render={props => <Express {...props}/>}/>
+     <Route path='/hogwarts-express/:id' render={props => <ExpressCard {...props}/>}/>
 
     <Footer/>
   </CharacterContext.Provider>

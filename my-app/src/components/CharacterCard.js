@@ -1,9 +1,5 @@
 import React,{useContext} from 'react';
-import {CharacterContext} from '../context/CharacterContext';
 import {Spinner} from 'reactstrap';
-
-
-
 
 function CharacterCard(props) {
 
