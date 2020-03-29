@@ -1,14 +1,19 @@
 import React,{useContext} from 'react';
 import {CharacterContext} from '../context/CharacterContext';
+import {Spinner} from 'reactstrap';
 
 
 
-function CharacterCard(props) {
+
+function CharacterCard() {
+
   const characters = useContext(CharacterContext);
 
   return (
     <div className="character-card-container">
- {props.characters.map(character =>(
+      {!characters 
+      ?  <Spinner style={{ width: '3rem', height: '3rem', color:'yellow' }} type="grow" /> 
+      : characters.map(character =>(
         <div className='character-card'>
          <h1> {character.name}</h1>
          <p> {character.role}</p>
