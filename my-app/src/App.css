@@ -101,8 +101,6 @@ width:40%;
 }
 
 #spellBook{
-  margin: 5% auto;
-  width:600px;
-  height:500px;
+  display:none;
 }
 

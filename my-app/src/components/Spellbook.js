@@ -22,13 +22,22 @@ const array = ['item one', 'item two', 'item three']
 
   return (
   <div className='spell-book-container'>
+    <a id='next-page-button'></a>
+    <a id='prev-page-button'></a>
     <div id='spellBook'>
-      <div>Page One</div>
-      <div>Page Two</div>
-      <div>Page Three</div>
-      <div>Page Four</div>
-      <div>Page Five</div>
-      <div>Page Six</div>
+      <div>
+        <h1>Page One</h1>
+        <p>Here is theih;oa hkihfoie jhlkiasd  ioiodsah idsahdshf</p>
+      </div>
+      <div>
+        <h1>Page Two</h1>
+        <p>Here is theih;oa hkihfoie jhlkiasd  ioiodsah idsahdshf</p>
+      </div>
+      <div>
+        <h1>Page Three</h1>
+        <p>Here is theih;oa hkihfoie jhlkiasd  ioiodsah idsahdshf</p>
+      </div>
+
     </div>
   </div>
   );
