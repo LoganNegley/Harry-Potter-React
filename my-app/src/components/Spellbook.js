@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
-import {Spinner, Pagination, PaginationItem, PaginationLink} from 'reactstrap';
+import {Spinner} from 'reactstrap';
 import Spells from '../components/Spells';
+import Pagination from '../components/Pagination';
 
 
 function Spellbook() {
@@ -22,12 +23,20 @@ useEffect(() => {
         console.log(error, 'error with getting spells from api')
     })
 },[])
-console.log(loading)
-// console.log(spells)
+console.log(spells)
+
+// Get current spells
+const indexOfLastSpell = currentPage * spellsPerPage;
+const indexOfFirstSpell = indexOfLastSpell - spellsPerPage;
+const currentSpells = spells.slice(indexOfFirstSpell, indexOfLastSpell);
+
+// Change Page
+const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
   <div className='spell-book-container'>
-    <Spells loading='loading' spells='spells'/>
+    <Spells loading={loading} spells={currentSpells}/>
+    <Pagination spellsPerPage={spellsPerPage} totalSpells={spells.length} paginate={paginate}/>
   </div>
   );
 }

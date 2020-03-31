@@ -1,10 +1,11 @@
 import React from 'react';
+import {Spinner} from 'reactstrap';
 
 const Spells = ({spells, loading}) => {
     if(loading){
         return <h2>Loading</h2>
     }
-console.log(spells)
+
     return(
         <div className='spell-card-container'>
             {spells.map(item =>(
