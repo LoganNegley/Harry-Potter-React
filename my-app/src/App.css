@@ -97,10 +97,12 @@ width:40%;
 .spell-book-container{
   width:50%;
   margin:0 auto;
+
 }
 
-.flipBook{
-  color:red;
-  background-color:white;
+#spellBook{
+  margin: 5% auto;
+  width:600px;
+  height:500px;
 }
 
