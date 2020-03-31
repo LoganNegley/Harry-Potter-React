@@ -22,24 +22,33 @@ const array = ['item one', 'item two', 'item three']
   return (
   <div className='spell-book-container'>
     <div className='spellbook-wrapper'>
-      <FlipPage
-      className='spellbook'
-      orientation='horizontal'
-      pageBackground='turquoise'
-      >
-        <article>
-          <h1>My awesome first article</h1>
-          <p>My awesome first content</p>
-        </article>
-        <article>
-          <h1>My wonderful second article</h1>
-          <p>My wonderful second content</p>
-        </article>
-        <article>
-          <h1>My excellent third article</h1>
-          <p>My excellent third content</p>
-        </article>
-      </FlipPage>
+      <div className='spellbook-layerOne'>
+        <div className='spellbook-layerTwo'>
+          <div className='spellbook-layerThree'>
+            <FlipPage
+            className='spellbook'
+            orientation='horizontal'
+            pageBackground='turquoise'
+            width='800'
+            height='600'
+            perspective='10em'
+            >
+              <article>
+                <h1>My awesome first article</h1>
+                <p>My awesome first content</p>
+              </article>
+              <article>
+                <h1>My wonderful second article</h1>
+                <p>My wonderful second content</p>
+              </article>
+              <article>
+                <h1>My excellent third article</h1>
+                <p>My excellent third content</p>
+              </article>
+            </FlipPage>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   );

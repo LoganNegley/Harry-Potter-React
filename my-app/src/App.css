@@ -95,17 +95,44 @@ width:40%;
 /* Spellbook */
 .spell-book-container{
 background-color:white;
+border-radius: .5%;
+width:80%;
+margin:0 auto;
 }
 
 .spellbook-wrapper{
-  background-color:blue;
-  width:75%;
+  border-right:solid black 1px;
+  border-left:solid black 1px;
+  width:98%;
   margin:0 auto;
 }
 
 .spellbook{
   margin:0 auto;
-  
+}
+
+.spellbook-layerOne{
+  border-right:solid black 1px;
+  border-left:solid black 1px;
+  width:99%;
+  margin:0 auto;
+}
+
+.spellbook-layerTwo{
+  border-right:solid black 1px;
+  border-left:solid black 1px;
+  width:99%;
+  margin:0 auto;
+}
+
+.spellbook-layerThree{
+  border-right:solid black 1px;
+  border-left:solid black 1px;
+  width:99%;
+  margin:0 auto;
+}
+
+.spellbook article{
 }
 
 
