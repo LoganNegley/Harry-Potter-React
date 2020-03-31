@@ -21,40 +21,28 @@ const array = ['item one', 'item two', 'item three']
 
   return (
   <div className='spell-book-container'>
-    <FlipPage 
-      className='flipBook'
+    <div className='spellbook-wrapper'>
+      <FlipPage
+      className='spellbook'
       orientation='horizontal'
-      uncutePages ='true'
-      width='100%'
-      style={{color:'black', 
-               pageBackground:'red',}}
+      pageBackground='turquoise'
       >
-      {array.map(item =>(
-      <article>
-      <h1>{item}</h1>
-      </article>
-      ))}
-    </FlipPage>
+        <article>
+          <h1>My awesome first article</h1>
+          <p>My awesome first content</p>
+        </article>
+        <article>
+          <h1>My wonderful second article</h1>
+          <p>My wonderful second content</p>
+        </article>
+        <article>
+          <h1>My excellent third article</h1>
+          <p>My excellent third content</p>
+        </article>
+      </FlipPage>
+    </div>
   </div>
   );
 }
 
 export default Spellbook;
-
-
-
-
-
-//  <article>
-//     <h1>My awesome first article</h1>
-//     <p>My awesome first content</p>
-//     <p>Hello again</p>
-//   </article>
-//   <article>
-//     <h1>My wonderful second article</h1>
-//     <p>My wonderful second content</p>
-//   </article>
-//   <article>
-//     <h1>My excellent third article</h1>
-//     <p>My excellent third content</p>
-//   </article>
