@@ -2,8 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 import {Spinner} from 'reactstrap';
-import FlipPage from 'react-flip-page'
-import Background from '../bookImages/spellbook-page.jpg';
+import FlipPage from 'react-flip-page';
 
 
 function Spellbook() {
@@ -27,8 +26,8 @@ const array = ['item one', 'item two', 'item three']
       orientation='horizontal'
       uncutePages ='true'
       width='100%'
-      style={{color:'black', }}
-      pageBackground='url(Background)'
+      style={{color:'black', 
+               pageBackground:'red',}}
       >
       {array.map(item =>(
       <article>

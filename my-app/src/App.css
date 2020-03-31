@@ -95,6 +95,12 @@ width:40%;
 /* Spellbook */
 
 .spell-book-container{
+  width:75%;
+  margin:0 auto;
+  background-color:turquoise;
+}
+
+.flipBook{
   width:50%;
   margin:0 auto;
 }
