@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import axios from 'axios';
 import {Spinner} from 'reactstrap';
 import FlipPage from 'react-flip-page'
-import $ from 'jquery';
+import Background from '../bookImages/spellbook-page.jpg';
 
 
 function Spellbook() {
@@ -27,8 +27,8 @@ const array = ['item one', 'item two', 'item three']
       orientation='horizontal'
       uncutePages ='true'
       width='100%'
-      style={{color:'black'}}
-      showHint='true'
+      style={{color:'black', }}
+      pageBackground='url(Background)'
       >
       {array.map(item =>(
       <article>
