@@ -25,10 +25,10 @@ const array = ['item one', 'item two', 'item three']
     <FlipPage 
       className='flipBook'
       orientation='horizontal'
-      pageBackground='black'
       uncutePages ='true'
       width='100%'
-      color='blue'
+      style={{color:'black'}}
+      showHint='true'
       >
       {array.map(item =>(
       <article>
