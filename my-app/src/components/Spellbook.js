@@ -22,23 +22,20 @@ const array = ['item one', 'item two', 'item three']
 
   return (
   <div className='spell-book-container'>
-    <a id='next-page-button'></a>
-    <a id='prev-page-button'></a>
-    <div id='spellBook'>
-      <div>
-        <h1>Page One</h1>
-        <p>Here is theih;oa hkihfoie jhlkiasd  ioiodsah idsahdshf</p>
-      </div>
-      <div>
-        <h1>Page Two</h1>
-        <p>Here is theih;oa hkihfoie jhlkiasd  ioiodsah idsahdshf</p>
-      </div>
-      <div>
-        <h1>Page Three</h1>
-        <p>Here is theih;oa hkihfoie jhlkiasd  ioiodsah idsahdshf</p>
-      </div>
-
-    </div>
+    <FlipPage 
+      className='flipBook'
+      orientation='horizontal'
+      pageBackground='black'
+      uncutePages ='true'
+      width='100%'
+      color='blue'
+      >
+      {array.map(item =>(
+      <article>
+      <h1>{item}</h1>
+      </article>
+      ))}
+    </FlipPage>
   </div>
   );
 }
@@ -46,20 +43,7 @@ const array = ['item one', 'item two', 'item three']
 export default Spellbook;
 
 
-    // <FlipPage 
-    // className='flipBook'
-    // orientation='horizontal'
-    // pageBackground='white'
-    // uncutePages ='true'
-    // width='100%'
-    // >
-    // {array.map(item =>(
-    // <article>
-    // <p>{pageNumber}</p>
-    // <h1>{item}</h1>
-    // </article>
-    // ))}
-    // </FlipPage>
+
 
 
 //  <article>
