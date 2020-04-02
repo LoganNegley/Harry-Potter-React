@@ -1,12 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import {Spinner} from 'reactstrap';
 
-function () {
+
+function Search({characters}) {
 const [searchTerm, setSearchTerm] =useState('');
 const [searchResults, setSearchResults] = useState([])
 const [loading, setLoading] = useState(false);
 
-
+console.log(characters)
 //Search Function
 useEffect(() => {
 const result = characters.filter(char =>
@@ -14,7 +15,6 @@ char.toLowerCase().includes(searchTerm)
 );
 setSearchResults(result)
 },[searchTerm]);
-
 
 // Form functions
 const handleChange = event => {
