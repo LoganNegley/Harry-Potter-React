@@ -5,16 +5,19 @@ import {Spinner} from 'reactstrap';
 function Search({characters}) {
 const [searchTerm, setSearchTerm] =useState('');
 const [searchResults, setSearchResults] = useState([])
-const [loading, setLoading] = useState(false);
 
-console.log(characters)
+
+
 //Search Function
 useEffect(() => {
+    if(characters){
+        return    
 const result = characters.filter(char =>
 char.toLowerCase().includes(searchTerm)
 );
 setSearchResults(result)
-},[searchTerm]);
+}},[searchTerm]);
+
 
 // Form functions
 const handleChange = event => {
@@ -22,6 +25,7 @@ setSearchTerm(event.target.value);
 };
 
 
+console.log(searchResults)
   return (
     <div className="search">
         <input
@@ -31,6 +35,13 @@ setSearchTerm(event.target.value);
           onChange={handleChange}
           value={searchTerm}
         />
+        {searchResults.map(item => (
+            <ul>
+                <li>
+                    {item}
+                </li>
+            </ul>
+        ))}
     </div>
   );
 };
