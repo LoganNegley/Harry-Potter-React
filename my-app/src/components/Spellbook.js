@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Link} from 'react-router-dom';
 import axios from 'axios';
-import {Spinner} from 'reactstrap';
 import Spells from '../components/Spells';
 import Pagination from '../components/Pagination';
 
@@ -11,6 +9,8 @@ const [spells, setSpells] = useState([]);
 const [loading,setLoading] = useState(false);
 const [currentPage, setCurrentPage] =useState(1);
 const [spellsPerPage, setSpellsPerPage] = useState(20);
+
+
 
 useEffect(() => {
   setLoading(true);
@@ -25,13 +25,15 @@ useEffect(() => {
 },[])
 console.log(spells)
 
+// Change Page
+const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
 // Get current spells
 const indexOfLastSpell = currentPage * spellsPerPage;
 const indexOfFirstSpell = indexOfLastSpell - spellsPerPage;
 const currentSpells = spells.slice(indexOfFirstSpell, indexOfLastSpell);
 
-// Change Page
-const paginate = (pageNumber) => setCurrentPage(pageNumber);
+console.log(currentSpells)
 
   return (
   <div className='spell-book-container'>
