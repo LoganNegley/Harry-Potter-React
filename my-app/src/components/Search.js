@@ -1,18 +1,11 @@
-import React, {useContext, useState, useEffect} from 'react';
-import {Link} from 'react-router-dom';
-import {CharacterContext} from '../context/CharacterContext';
+import React, {useState, useEffect} from 'react';
 import {Spinner} from 'reactstrap';
 
-function Express() {
-const characters = useContext(CharacterContext);
+function () {
 const [searchTerm, setSearchTerm] =useState('');
 const [searchResults, setSearchResults] = useState([])
 const [loading, setLoading] = useState(false);
 
-
-
-
- console.log(characters)
 
 //Search Function
 useEffect(() => {
@@ -30,8 +23,7 @@ setSearchTerm(event.target.value);
 
 
   return (
-    <div className="hogwartsExpress-container">
-      <div className='search'>
+    <div className="search">
         <input
           type='text'
           name='search'
@@ -39,16 +31,8 @@ setSearchTerm(event.target.value);
           onChange={handleChange}
           value={searchTerm}
         />
-      </div>
-        {!characters 
-        ?  <Spinner style={{ width: '3rem', height: '3rem', color:'yellow' }} type="grow" /> 
-        : characters.map(character =>(
-        <div className='express-character-card'>
-          <h1>{character.name}</h1>
-        </div>
-        ))}
     </div>
   );
-}
+};
 
-export default Express;
+export default Search;
