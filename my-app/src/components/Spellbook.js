@@ -23,7 +23,6 @@ useEffect(() => {
         console.log(error, 'error with getting spells from api')
     })
 },[])
-console.log(spells)
 
 // Change Page
 const paginate = (pageNumber) => setCurrentPage(pageNumber);
@@ -33,7 +32,6 @@ const indexOfLastSpell = currentPage * spellsPerPage;
 const indexOfFirstSpell = indexOfLastSpell - spellsPerPage;
 const currentSpells = spells.slice(indexOfFirstSpell, indexOfLastSpell);
 
-console.log(currentSpells)
 
   return (
   <div className='spell-book-container'>

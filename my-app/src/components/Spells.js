@@ -6,8 +6,6 @@ const Spells = ({spells, loading}) => {
         return <h1>loading</h1>
     }
 
-console.log(spells)
-
     return(
         <div className='spell-card-container'>
             {spells.map(item =>(
