@@ -9,7 +9,7 @@ const Spells = ({spells, loading}) => {
     return(
         <div className='spell-card-container'>
             {spells.map(item =>(
-                <div className='spell-card' key={item.key}>
+                <div className='spell-card'>
                     <h1>{item.spell}</h1>
                 </div>
             ))}
