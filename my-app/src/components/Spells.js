@@ -3,8 +3,10 @@ import {Spinner} from 'reactstrap';
 
 const Spells = ({spells, loading}) => {
     if(loading){
-        return <h2>Loading</h2>
+        return <h1>loading</h1>
     }
+
+console.log(spells)
 
     return(
         <div className='spell-card-container'>

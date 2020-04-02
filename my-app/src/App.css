@@ -92,7 +92,13 @@ width:40%;
   padding:.4rem;
 }
 
-/* Spellbook */
+/* Pagination*/
+ul{
+  display:flex;
+  margin:0 auto;
+  list-style-type: none;
+}
+
 
 
 
