@@ -2,16 +2,16 @@ import React from 'react';
 import {Spinner} from 'reactstrap';
 
 const Pagination = ({spellsPerPage, totalSpells, paginate}) => {
-    const pageNumber=[];
+    const pageNumbers=[];
 
     for(let i = 1; i <= Math.ceil(totalSpells / spellsPerPage); i++){
-        pageNumber.push(i);
+        pageNumbers.push(i);
     }
     
     return(
         <nav>
             <ul>
-                {pageNumber.map(number =>(
+                {pageNumbers.map(number =>(
                     <li key={number} className='page-item'>
                         <a onClick={()=> paginate(number)} href="!#" className='page-link'>
                             {number}

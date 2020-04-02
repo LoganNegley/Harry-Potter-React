@@ -8,7 +8,7 @@ function Spellbook() {
 const [spells, setSpells] = useState([]);
 const [loading,setLoading] = useState(false);
 const [currentPage, setCurrentPage] =useState(1);
-const [spellsPerPage, setSpellsPerPage] = useState(20);
+const [spellsPerPage, setSpellsPerPage] = useState(10);
 
 
 
