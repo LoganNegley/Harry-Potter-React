@@ -99,6 +99,26 @@ ul{
   list-style-type: none;
 }
 
+/* Spell cards */
+.spell-book-container{
+  width:75%;
+  margin:0 auto;
+}
+
+.spell-card-container{
+  display:flex;
+  flex-flow:row wrap;
+}
+
+.spell-card{
+  border:solid black 2px;
+  width:40%;
+  height:15rem;
+  margin:2rem;
+  padding:2rem;
+  text-align: center;
+}
+
 
 
 
