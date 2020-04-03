@@ -7,13 +7,19 @@ const Spells = ({spells, loading}) => {
     }
 console.log(spells)
     return(
-        <div className='spell-card-container'>
+        <div className='spells-container'>
             {spells.map(item =>(
-                <div className='spell-card' key={item._id}>
-                    <h1>{item.spell}</h1>
-                    <p>{item.type}</p>
-                    <p>{item.effect}</p>
-                </div>
+              <div className='flip-card'>
+                  <div className='flip-card-inner'>
+                      <div className='flip-card-front'>
+                        <h1>{item.spell}</h1>
+                      </div>
+                      <div className='flip-card-back'>
+                        <p>Type: {item.type}</p>
+                        <p>Effects: {item.effect}</p>
+                      </div>
+                  </div>
+              </div>
             ))}
         </div>
     )
