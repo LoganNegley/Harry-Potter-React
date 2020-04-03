@@ -15,8 +15,9 @@ console.log(spells)
                         <h1>{item.spell}</h1>
                       </div>
                       <div className='flip-card-back'>
-                        <p>Type: {item.type}</p>
-                        <p>Effects: {item.effect}</p>
+                        <p><span className='name'>{item.spell}</span></p>
+                        <p><span className='description'>Type:</span> {item.type}</p>
+                        <p><span className='description'>Effects:</span> {item.effect}</p>
                       </div>
                   </div>
               </div>

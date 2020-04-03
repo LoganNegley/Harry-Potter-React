@@ -106,20 +106,16 @@ width:40%;
   border:none;
   color:black;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 2rem;
+  font-family: 'Marck Script', cursive;
 }
 
 .pagination a:hover{
-  background-color:#F3C01B;
+  background-color:white;
+  opacity: .5%;
   color:black;
   border-radius: 1rem;
 }
-
-.pagination a:active{
-  background-color:#F3C01B;
-
-}
-
 
 .arrow{
   margin-bottom:.5rem;
@@ -142,12 +138,12 @@ width:40%;
   display:flex;
   flex-flow:row wrap;
   width:70%;
-  margin:0 auto;
+  margin:0rem auto;
 }
 .flip-card {
   background-color: transparent;
   width: 45%;
-  height: 200px;
+  height: 150px;
   /* border: 1px solid #f1f1f1; */
   perspective: 1000px; 
   margin:1rem;
@@ -179,6 +175,27 @@ width:40%;
 .flip-card-front {
   background-color: #bbb;
   color: black;
+  text-decoration: underline;
+}
+
+.flip-card-front h1{
+  font-family: 'Marck Script', cursive;
+  font-size: 4rem;
+}
+
+.flip-card-back p{
+  font-family: 'Cinzel', serif;
+}
+
+.flip-card-back p .name{
+  font-size: 1.65rem;
+  font-weight: bold;
+}
+
+.flip-card-back .description{
+  text-decoration: underline;
+  font-style: italic;
+
 }
 
 .flip-card-back {
