@@ -9,17 +9,19 @@ const Pagination = ({spellsPerPage, totalSpells, paginate}) => {
     }
     
     return(
-        <nav>
-            <ul>
-                {pageNumbers.map(number =>(
-                    <li key={number} className='page-item'>
-                        <a onClick={()=> paginate(number)} href= {`#-${number}`} className='page-link'>
-                            {number}
-                        </a>
-                    </li>
+        <div className='pagination'>
+        <div className='arrows'>
+            <p>&larr;</p>
+        </div>
+            {pageNumbers.map(number =>(
+            <a onClick={()=> paginate(number)} href= {`#-${number}`} className='page-link'>
+            {number}
+            </a>
                 ))}
-            </ul>
-        </nav>
+        <div className='arrows'>
+            <p>&rarr;</p>
+        </div>
+        </div>
     )
 };
 

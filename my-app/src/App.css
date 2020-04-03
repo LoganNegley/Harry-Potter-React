@@ -93,20 +93,60 @@ width:40%;
 }
 
 /* Pagination*/
-ul{
-  display:flex;
+
+.pagination{
+  padding:1rem 1rem;
+  text-decoration: none;
+  width:60%;
   margin:0 auto;
-  list-style-type: none;
+}
+
+.pagination a{
+  background:transparent;
+  border:none;
+  color:black;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.pagination a:hover{
+  background-color:#F3C01B;
+  color:black;
+  border-radius: 1rem;
+}
+
+.pagination a:active{
+  background-color:#F3C01B;
+
+}
+
+
+.arrow{
+  margin-bottom:.5rem;
+}
+
+.arrows p{
+  color:black;
+  font-size:1.5rem;
 }
 
 /* Spell cards */
+.spell-book-container{
+  background-image: url('bookImages/spellbook-paper-dark.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+
+}
+
 .spells-container{
   display:flex;
   flex-flow:row wrap;
+  width:70%;
+  margin:0 auto;
 }
 .flip-card {
   background-color: transparent;
-  width: 30%;
+  width: 45%;
   height: 200px;
   /* border: 1px solid #f1f1f1; */
   perspective: 1000px; 

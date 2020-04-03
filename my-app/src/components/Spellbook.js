@@ -34,7 +34,7 @@ const currentSpells = spells.slice(indexOfFirstSpell, indexOfLastSpell);
 
 
   return (
-  <div className='spell-book-container'>
+  <div className='spell-book-container' style={{ backgroundImage: `url(require("images/spellbook-paper.jpg"))` }}>
     <Spells loading={loading} spells={currentSpells}/>
     <Pagination spellsPerPage={spellsPerPage} totalSpells={spells.length} paginate={paginate}/>
   </div>
