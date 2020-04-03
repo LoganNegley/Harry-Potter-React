@@ -35,6 +35,10 @@ const currentSpells = spells.slice(indexOfFirstSpell, indexOfLastSpell);
 
   return (
   <div className='spell-book-container' style={{ backgroundImage: `url(require("images/spellbook-paper.jpg"))` }}>
+    <header id='spellbook-header'>
+      <h1>Wizardry Spellbook</h1>
+      <p>This book of spells is written in magic ink, only wizards can wave the magic wands and reveal the information behind these spells</p>
+    </header>
     <Spells loading={loading} spells={currentSpells}/>
     <Pagination spellsPerPage={spellsPerPage} totalSpells={spells.length} paginate={paginate}/>
   </div>

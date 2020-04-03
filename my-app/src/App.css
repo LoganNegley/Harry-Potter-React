@@ -126,12 +126,48 @@ width:40%;
   font-size:1.5rem;
 }
 
-/* Spell cards */
+/* Spellbook */
 .spell-book-container{
   background-image: url('bookImages/spellbook-paper-dark.jpg');
   background-repeat:no-repeat;
   background-size:cover;
+}
 
+#spellbook-header{
+  width:80%;
+  margin:0 auto;
+}
+#spellbook-header h1{
+  text-align:center;
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: .5rem;
+  font-size:4rem;
+}
+
+#spellbook-header p{
+  font-size:2rem;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+#spellbook-header h1 {
+  position: relative;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 23s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
 
 .spells-container{
@@ -204,4 +240,8 @@ width:40%;
   font-size:1.5rem;
   color: white;
   transform: rotateY(180deg);
+}
+
+footer p{
+  margin:0;
 }
