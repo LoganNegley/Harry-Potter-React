@@ -7,17 +7,15 @@ const [searchResults, setSearchResults] = useState([])
 const characters = useContext(CharacterContext);
 
 
-const characterNames = characters.map(item => item.name);
-console.log(characterNames)
+
 
 //Search Function
 useEffect(() => {
-    if(characters){
-      return
+  const characterNames = characters.map(item => item.name);
   const result= characterNames.filter(char =>
   char.toLowerCase().includes(searchTerm.toLowerCase()))
 setSearchResults(result)
-}},[searchTerm]);
+},[searchTerm]);
 
 console.log(searchResults)
 
@@ -35,13 +33,14 @@ setSearchTerm(event.target.value);
           onChange={handleChange}
           value={searchTerm}
         />
-        <ul>
-        {searchResults.map(item => (
-            <li>
+        
+      <ul style={{listStyleType:'none'}}>
+        <li  >
+          {searchResults.map(item => (
                 {item}
-            </li>
-        ))}
-        </ul>
+            ))}
+        </li>
+      </ul>
     </div>
   );
 };
