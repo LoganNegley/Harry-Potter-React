@@ -6,10 +6,12 @@ import Search from '../components/Search';
 
 function Express() {
 const characters = useContext(CharacterContext);
+const characterNames = characters.map(item => item.name);
+console.log(characterNames)
 
   return (
     <div className="hogwartsExpress-container">
-      <Search/>
+      <Search characterNames={characterNames}/>
         {!characters 
         ?  <Spinner style={{ width: '3rem', height: '3rem', color:'yellow' }} type="grow" /> 
         : characters.map(character =>(

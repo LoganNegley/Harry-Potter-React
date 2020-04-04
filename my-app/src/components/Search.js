@@ -1,15 +1,10 @@
-import React, {useState, useEffect, useContext} from 'react';
-import {CharacterContext} from '../context/CharacterContext';
+import React, {useState, useEffect} from 'react';
 
-function Search() {
+function Search(props) {
 const [searchTerm, setSearchTerm] =useState('');
 const [searchResults, setSearchResults] = useState([]);
 const [filteredList, setFilteredList] = useState([]);
-const characters = useContext(CharacterContext);
 
-
-const characterNames = characters.map(item => item.name);
-console.log(characterNames)
 
 //Search Function
 // useEffect(() => {
@@ -24,8 +19,8 @@ console.log(characterNames)
 const handleChange = event => {
 setSearchTerm(event.target.value);
 if(event.target.value !== ''){
-  setSearchResults(characterNames)
-  setFilteredList(characterNames.filter(char => char.toLowerCase().includes(searchTerm.toLowerCase())))
+  setSearchResults(props.characterNames)
+  setFilteredList(props.characterNames.filter(char => char.toLowerCase().includes(searchTerm.toLowerCase())))
 } else if(event.target.value === ''){
   setSearchResults([])
 } 
