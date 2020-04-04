@@ -1,11 +1,10 @@
-import React,{useContext} from 'react';
+import React from 'react';
 import {Spinner} from 'reactstrap';
 
 function CharacterCard(props) {
 
   return (
     <div className="character-card-container">
- 
         <div className='character-card'>
          <h1> {props.character.name}</h1>
          <p> {props.character.role}</p>
@@ -13,6 +12,9 @@ function CharacterCard(props) {
         </div>
     </div>
   );
-}
+};
 
 export default CharacterCard;
+
+
+   
