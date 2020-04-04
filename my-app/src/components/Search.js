@@ -1,17 +1,21 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
+import {CharacterContext} from '../context/CharacterContext';
 
-function Search({characters}) {
+function Search() {
 const [searchTerm, setSearchTerm] =useState('');
 const [searchResults, setSearchResults] = useState([])
+const characters = useContext(CharacterContext);
 
+
+const characterNames = characters.map(item => item.name);
+console.log(characterNames)
 
 //Search Function
 useEffect(() => {
     if(characters){
-        return    
-const result = characters.filter(char =>
-char.toLowerCase().includes(searchTerm.toLowerCase())
-);
+      return
+  const result= characterNames.filter(char =>
+  char.toLowerCase().includes(searchTerm.toLowerCase()))
 setSearchResults(result)
 }},[searchTerm]);
 

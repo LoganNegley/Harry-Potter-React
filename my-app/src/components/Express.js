@@ -9,7 +9,7 @@ const characters = useContext(CharacterContext);
 
   return (
     <div className="hogwartsExpress-container">
-      <Search characters={characters}/>
+      <Search/>
         {!characters 
         ?  <Spinner style={{ width: '3rem', height: '3rem', color:'yellow' }} type="grow" /> 
         : characters.map(character =>(

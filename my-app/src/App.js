@@ -18,7 +18,7 @@ import Spellbook from '../src/components/Spellbook';
 
 
 function App() {
-const [characters, setCharacters] = useState(null);
+const [characters, setCharacters] = useState([]);
 
 //Character fetch from API
 useEffect(() => {
