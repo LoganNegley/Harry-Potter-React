@@ -11,7 +11,7 @@ console.log(characterNames)
 
   return (
     <div className="hogwartsExpress-container">
-      <Search characterNames={characterNames}/>
+      <Search searchItem={characterNames}/>
         {!characters 
         ?  <Spinner style={{ width: '3rem', height: '3rem', color:'yellow' }} type="grow" /> 
         : characters.map(character =>(

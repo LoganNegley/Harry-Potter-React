@@ -9,8 +9,8 @@ const [filteredList, setFilteredList] = useState([]);
 
 //Search Function
 useEffect(() => {
-  const result= props.characterNames.filter(char =>
-  char.toLowerCase().includes(searchTerm.toLowerCase()))
+  const result= props.searchItem.filter(item =>
+  item.toLowerCase().includes(searchTerm.toLowerCase()))
 setSearchResults(result)
  if(searchTerm === ''){
     setSearchResults([])
@@ -22,21 +22,18 @@ const handleChange = event => {
 setSearchTerm(event.target.value);
 };
 
-
-
- 
   return (
     <div className="search">
         <input
           type='text'
           name='search'
-          placeholder='Search Characters'
+          placeholder='Search Here'
           onChange={handleChange}
           value={searchTerm}
         />
          <ul> 
         {searchResults.map(item => (
-             <li> 
+             <li style={{listStyleType:'none'}}> 
                 {item}
              </li> 
         ))}
