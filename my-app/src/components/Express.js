@@ -10,7 +10,8 @@ const characterNames = characters.map(item => item.name);
 console.log(characterNames)
 
   return (
-    <div className="hogwartsExpress-container">
+  <div className='express-wrapper'>
+    <div className="hogwartsExpress-wrapper">
       <Search searchItem={characterNames}/>
         {!characters 
         ?  <Spinner style={{ width: '3rem', height: '3rem', color:'yellow' }} type="grow" /> 
@@ -19,8 +20,8 @@ console.log(characterNames)
           <h1>{character.name}</h1>
         </div>
         ))}
-
     </div>
+  </div>
   );
 }
 

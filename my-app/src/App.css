@@ -245,3 +245,41 @@ width:40%;
 footer p{
   margin:0;
 }
+
+/* Express */
+.express-wrapper{
+  background-image: url('bookImages/express.jpg');
+   background-repeat:no-repeat;
+}
+.hogwartsExpress-wrapper .search{
+  width:50%;
+  margin:0 auto;
+  margin-top:2rem;
+  padding-top:1rem;
+}
+
+.hogwartsExpress-wrapper .search li{
+  color:black;
+  font-size:1.5rem;
+}
+
+.hogwartsExpress-wrapper input{
+  border:2px black solid;
+  width:75%;
+}
+
+.hogwartsExpress-wrapper{
+  width:75%;
+  margin:0 auto;
+  background-color:white;
+  opacity: 55%;
+  box-shadow: 15px 10px 30px #710A0D inset;
+}
+
+.express-character-card{
+  margin:0 auto;
+  width:50%;
+}
+.express-character-card h1{
+  color:black;
+}
