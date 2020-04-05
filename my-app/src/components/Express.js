@@ -6,6 +6,10 @@ import Search from '../components/Search';
 
 function Express() {
 const characters = useContext(CharacterContext);
+
+
+
+// variables
 const characterNames = characters.map(item => item.name);
 console.log(characterNames)
 
