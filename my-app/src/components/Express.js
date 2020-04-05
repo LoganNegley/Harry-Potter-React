@@ -1,29 +1,36 @@
 import React, {useContext, useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import {CharacterContext} from '../context/CharacterContext';
-import {Spinner} from 'reactstrap';
 import Search from '../components/Search';
+import Pagination from '../components/Pagination';
+import ExpressCard from '../components/ExpressCard';
+
 
 function Express() {
 const characters = useContext(CharacterContext);
-
+const [currentPage, setCurrentPage] =useState(1);
+const [itemsPerPage, setItemsPerPage] = useState(15);
 
 
 // variables
 const characterNames = characters.map(item => item.name);
-console.log(characterNames)
+
+// Change Page
+const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+// Get current spells
+const indexOfLastCharacter = currentPage * itemsPerPage;
+const indexOfFirstCharacter = indexOfLastCharacter - itemsPerPage;
+const currentCharacter = characterNames.slice(indexOfFirstCharacter, indexOfLastCharacter);
+
+console.log(currentCharacter);
 
   return (
   <div className='express-wrapper'>
     <div className="hogwartsExpress-wrapper">
       <Search searchItem={characterNames}/>
-        {!characters 
-        ?  <Spinner style={{ width: '3rem', height: '3rem', color:'yellow' }} type="grow" /> 
-        : characters.map(character =>(
-        <div className='express-character-card'>
-          <h1>{character.name}</h1>
-        </div>
-        ))}
+          <ExpressCard character={characters} current={currentCharacter} />
+          <Pagination itemsPerPage={itemsPerPage} totalItems={characterNames.length} paginate={paginate}/>
     </div>
   </div>
   );

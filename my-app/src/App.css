@@ -1,3 +1,4 @@
+
 .App{
   color:white;
 }
@@ -95,7 +96,6 @@ width:40%;
 /* Pagination*/
 
 .pagination{
-  padding:1rem 1rem;
   text-decoration: none;
   width:60%;
   margin:0 auto;
@@ -108,6 +108,7 @@ width:40%;
   font-weight: bold;
   font-size: 2rem;
   font-family: 'Marck Script', cursive;
+  padding:0 .5rem;
 }
 
 .pagination a:hover{
@@ -146,9 +147,8 @@ width:40%;
 
 #spellbook-header p{
   font-size:2rem;
-  background: linear-gradient(90deg, #000, #fff, #000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  opacity: 25%;
 }
 
 #spellbook-header h1 {
@@ -242,9 +242,7 @@ width:40%;
   transform: rotateY(180deg);
 }
 
-footer p{
-  margin:0;
-}
+
 
 /* Express */
 .express-wrapper{
@@ -274,12 +272,18 @@ footer p{
   background-color:white;
   opacity: 55%;
   box-shadow: 15px 10px 30px #710A0D inset;
+  height:100%;
 }
 
-.express-character-card{
+.express-card{
   margin:0 auto;
   width:50%;
 }
-.express-character-card h1{
+.express-card h1{
   color:black;
+}
+
+/* footer */
+footer p{
+  margin:0;
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import {Spinner} from 'reactstrap';
 
 const Spells = ({spells, loading}) => {
     if(loading){
