@@ -1,10 +1,10 @@
 import React from 'react';
 import {Spinner} from 'reactstrap';
 
-const Pagination = ({spellsPerPage, totalSpells, paginate}) => {
+const Pagination = ({itemsPerPage, totalItems, paginate}) => {
     const pageNumbers=[];
 
-    for(let i = 1; i <= Math.ceil(totalSpells / spellsPerPage); i++){
+    for(let i = 1; i <= Math.ceil(totalItems / itemsPerPage); i++){
         pageNumbers.push(i);
     }
     

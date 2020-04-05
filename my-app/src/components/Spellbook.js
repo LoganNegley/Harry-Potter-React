@@ -8,7 +8,7 @@ function Spellbook() {
 const [spells, setSpells] = useState([]);
 const [loading,setLoading] = useState(false);
 const [currentPage, setCurrentPage] =useState(1);
-const [spellsPerPage, setSpellsPerPage] = useState(14);
+const [itemsPerPage, setItemsPerPage] = useState(14);
 
 
 
@@ -28,8 +28,8 @@ useEffect(() => {
 const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
 // Get current spells
-const indexOfLastSpell = currentPage * spellsPerPage;
-const indexOfFirstSpell = indexOfLastSpell - spellsPerPage;
+const indexOfLastSpell = currentPage * itemsPerPage;
+const indexOfFirstSpell = indexOfLastSpell - itemsPerPage;
 const currentSpells = spells.slice(indexOfFirstSpell, indexOfLastSpell);
 
 
@@ -40,7 +40,7 @@ const currentSpells = spells.slice(indexOfFirstSpell, indexOfLastSpell);
       <p>This book of spells is written in magic ink, only wizards can wave the magic wands and reveal the information behind these spells</p>
     </header>
     <Spells loading={loading} spells={currentSpells}/>
-    <Pagination spellsPerPage={spellsPerPage} totalSpells={spells.length} paginate={paginate}/>
+    <Pagination itemsPerPage={itemsPerPage} totalItems={spells.length} paginate={paginate}/>
   </div>
   );
 }
