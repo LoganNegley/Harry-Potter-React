@@ -23,7 +23,12 @@ fetchCharacter(props.match.params.id)
 
     return(
         <div>
-            <h1>{character.name}</h1>
+            <h1>Name: {character.name}</h1>
+            <p>House Assignment: {character.house}</p>
+            <p>Role: {character.role}</p>
+            <p>School: {character.school}</p>
+            <p>Blood Type: {character.bloodStatus}</p>
+            <p>Species: {character.species}</p>
         </div>
     )
 };
