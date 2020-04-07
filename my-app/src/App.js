@@ -11,9 +11,9 @@ import Affiliations from '../src/components/Affiliations';
 import SortingHat from '../src/components/SortingHat';
 import Footer from '../src/components/Footer';
 import Express from '../src/components/Express';
-import DumbledoreArmy from '../src/components/DumbledoreArmy';
-import PhoenixCharacters from '../src/components/PhoenixCharacters';
-import MinistryCharacters from '../src/components/MinistryCharacters';
+import DumbledoreList from '../src/components/DumbledoreList';
+import PhoenixList from '../src/components/PhoenixList';
+import MinistryList from '../src/components/MinistryList';
 import Spellbook from '../src/components/Spellbook';
 
 
@@ -37,9 +37,9 @@ useEffect(() => {
     <Navigation/>
 
     <Route exact path='/' render={props => <Affiliations {...props}/>}/>
-    <Route path='/dumbledore-army' render={props => <DumbledoreArmy {...props}/>}/>
-    <Route path='/order-of-phoenix' render={props => <PhoenixCharacters {...props}/>}/>
-    <Route path='/ministry-of-magic' render={props => <MinistryCharacters {...props}/>}/>
+    <Route path='/dumbledore-army' render={props => <DumbledoreList {...props}/>}/>
+    <Route path='/order-of-phoenix' render={props => <PhoenixList {...props}/>}/>
+    <Route path='/ministry-of-magic' render={props => <MinistryList {...props}/>}/>
      <Route exact path='/spellbook' render={props => <Spellbook {...props}/>}/>
 
     <Route path='/sorting-hat'>

@@ -2,21 +2,23 @@ import React, {useContext} from 'react';
 import CharacterCard from '../components/CharacterCard';
 import {CharacterContext} from '../context/CharacterContext';
 import {Spinner} from 'reactstrap';
+import Search from '../components/Search';
 
-
-function Ministry() {
-  const characters = useContext(CharacterContext);
+function DumbledoreList() {
+const characters = useContext(CharacterContext);
+const characterNames = characters.map(item => item.name);
 
   return (
-    <div className="orderOfPhoenix-container">
-      {!characters 
+    <div className="dumbledore-army-container">
+      <Search searchItem={characterNames}/>
+         {!characters 
       ?  <Spinner style={{ width: '3rem', height: '3rem', color:'yellow' }} type="grow" /> 
       : characters.map(character =>(
-        character.ministryOfMagic === true &&
+        character.dumbledoresArmy === true &&
         <CharacterCard character={character}/>
        ))}
     </div>
   );
 }
 
-export default Ministry;
+export default DumbledoreList;

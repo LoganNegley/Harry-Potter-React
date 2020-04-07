@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Spells = ({spells, loading}) => {
+const SpellCard = ({spells, loading}) => {
     if(loading){
         return <h1>loading</h1>
     }
@@ -25,4 +25,4 @@ console.log(spells)
     )
 };
 
-export default Spells;
+export default SpellCard;

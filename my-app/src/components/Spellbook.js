@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import Spells from '../components/Spells';
+import SpellCard from '../components/SpellCard';
 import Pagination from '../components/Pagination';
 
 
@@ -39,7 +39,7 @@ const currentSpells = spells.slice(indexOfFirstSpell, indexOfLastSpell);
       <h1>Wizardry Spellbook</h1>
       <p>This book of spells is written in magic ink, only wizards can wave the magic wands and reveal the information behind these spells</p>
     </header>
-    <Spells loading={loading} spells={currentSpells}/>
+    <SpellCard loading={loading} spells={currentSpells}/>
     <Pagination itemsPerPage={itemsPerPage} totalItems={spells.length} paginate={paginate}/>
   </div>
   );
