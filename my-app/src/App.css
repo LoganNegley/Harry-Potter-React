@@ -275,13 +275,15 @@ width:40%;
   height:100%;
 }
 
-.express-card{
-  margin:0 auto;
-  width:50%;
-}
-.express-card h1{
+.expressList h3{
   color:black;
 }
+
+.hogwartsExpress-wrapper h1{
+  color:black;
+}
+
+
 
 /* footer */
 footer p{

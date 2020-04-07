@@ -16,15 +16,16 @@ console.log(characters)
 
   return (
   <div className='express-wrapper'>
-    <div className="hogwartsExpress-wrapper">
+    <div className='express-container'>
       <Search searchItem={characterNames}/>
-        {characters.map(item =>(
-          <Link key={item.id} to={`/hogwarts-express-character/${item._id}`}>
-            <div className='express-card'>
-              <h1>{item.name}</h1>
-            </div>
-          </Link>
+      <h1>Hop on the Hogwarts Express and find your favorite wizard to learn more information on them</h1>
+        <ul id='express-character-list'>
+          {characters.map(item =>(
+            <Link key={item.id} to={`/hogwarts-express-character/${item._id}`}>
+              <li>{item.name}</li>
+            </Link>
         ))}
+        </ul>
     </div>
   </div>
   );
