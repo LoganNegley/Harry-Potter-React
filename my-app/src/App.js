@@ -15,6 +15,7 @@ import DumbledoreList from '../src/components/DumbledoreList';
 import PhoenixList from '../src/components/PhoenixList';
 import MinistryList from '../src/components/MinistryList';
 import Spellbook from '../src/components/Spellbook';
+import MainCharacterCard from '../src/components/MainCharacterCard';
 
 
 function App() {
@@ -47,6 +48,9 @@ useEffect(() => {
     </Route>
 
     <Route path='/hogwarts-express' render={props => <Express {...props}/>}/>
+
+    <Route path="/hogwarts-express-character/:id" render={props => <MainCharacterCard {...props} />}/>
+
 
 
     <Footer/>

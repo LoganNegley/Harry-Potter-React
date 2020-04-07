@@ -8,33 +8,23 @@ import MainCharacterCard from '../components/MainCharacterCard';
 
 function Express() {
 const characters = useContext(CharacterContext);
-const [currentPage, setCurrentPage] =useState(1);
-const [itemsPerPage, setItemsPerPage] = useState(15);
-
 
 // variables
 const characterNames = characters.map(item => item.name);
 
-// Change Page
-const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
-// Get current spells
-const indexOfLastCharacter = currentPage * itemsPerPage;
-const indexOfFirstCharacter = indexOfLastCharacter - itemsPerPage;
-const currentCharacter = characterNames.slice(indexOfFirstCharacter, indexOfLastCharacter);
-
-console.log(currentCharacter);
+console.log(characters)
 
   return (
   <div className='express-wrapper'>
     <div className="hogwartsExpress-wrapper">
       <Search searchItem={characterNames}/>
-        {currentCharacter.map(item =>(
-          <div className='express-card'>
-            <h1>{item}</h1>
-          </div>
+        {characters.map(item =>(
+          <Link key={item.id} to={`/hogwarts-express-character/${item._id}`}>
+            <div className='express-card'>
+              <h1>{item.name}</h1>
+            </div>
+          </Link>
         ))}
-      <Pagination itemsPerPage={itemsPerPage} totalItems={characterNames.length} paginate={paginate}/>
     </div>
   </div>
   );
