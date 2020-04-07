@@ -1,15 +1,10 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const MainCharacterCard = ({character, current}) => {
 
     return(
-        <section>
-            {current.map(item =>(
-                <div className='express-card'>
-                    <h1>{item}</h1>
-                </div>
-            ))}
-        </section>
+
     )
 };
 

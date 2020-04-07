@@ -48,6 +48,7 @@ useEffect(() => {
 
     <Route path='/hogwarts-express' render={props => <Express {...props}/>}/>
 
+
     <Footer/>
   </CharacterContext.Provider>
   </div>
