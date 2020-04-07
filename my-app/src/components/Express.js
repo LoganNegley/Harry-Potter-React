@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import {CharacterContext} from '../context/CharacterContext';
 import Search from '../components/Search';
 import Pagination from '../components/Pagination';
-import ExpressCard from '../components/ExpressCard';
+import MainCharacterCard from '../components/MainCharacterCard';
 
 
 function Express() {
@@ -29,7 +29,7 @@ console.log(currentCharacter);
   <div className='express-wrapper'>
     <div className="hogwartsExpress-wrapper">
       <Search searchItem={characterNames}/>
-          <ExpressCard character={characters} current={currentCharacter} />
+          <MainCharacterCard character={characters} current={currentCharacter} />
           <Pagination itemsPerPage={itemsPerPage} totalItems={characterNames.length} paginate={paginate}/>
     </div>
   </div>

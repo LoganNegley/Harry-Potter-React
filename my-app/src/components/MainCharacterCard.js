@@ -1,12 +1,16 @@
 import React from 'react';
 
-function MainCharacterCard(props) {
+const MainCharacterCard = ({character, current}) => {
 
-  return (
-    <div className="">
-         <h1> {props.character.name}</h1>
-    </div>
-  );
+    return(
+        <section>
+            {current.map(item =>(
+                <div className='express-card'>
+                    <h1>{item}</h1>
+                </div>
+            ))}
+        </section>
+    )
 };
 
 export default MainCharacterCard;
