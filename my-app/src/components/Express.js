@@ -29,8 +29,8 @@ console.log(currentCharacter);
   <div className='express-wrapper'>
     <div className="hogwartsExpress-wrapper">
       <Search searchItem={characterNames}/>
-          <MainCharacterCard character={characters} current={currentCharacter} />
-          <Pagination itemsPerPage={itemsPerPage} totalItems={characterNames.length} paginate={paginate}/>
+        <MainCharacterCard character={characters} current={currentCharacter} />
+        <Pagination itemsPerPage={itemsPerPage} totalItems={characterNames.length} paginate={paginate}/>
     </div>
   </div>
   );
