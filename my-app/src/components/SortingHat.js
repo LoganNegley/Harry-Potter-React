@@ -5,9 +5,8 @@ function SortingHat() {
   const houses = ['Hufflepuff,Slytherin,Ravenclaw,Gryffindor']
 
   return (
-    <div className='sorting-hat'>
+    <div className='sorting-hat-container'>
       <img src='images/sorting.jpg'/>
-      
     </div>
   );
 }

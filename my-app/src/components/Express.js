@@ -16,9 +16,9 @@ console.log(characters)
 
   return (
   <div className='express-wrapper'>
-    <div className='express-container'>
+    <div className='hogwartsExpress-wrapper'>
+    <h1>Hop on the Hogwarts Express and find your favorite wizard to learn more information on them</h1>
       <Search searchItem={characterNames}/>
-      <h1>Hop on the Hogwarts Express and find your favorite wizard to learn more information on them</h1>
         <ul id='express-character-list'>
           {characters.map(item =>(
             <Link key={item.id} to={`/hogwarts-express-character/${item._id}`}>
