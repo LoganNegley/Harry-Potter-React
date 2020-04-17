@@ -92,6 +92,13 @@ width:40%;
   font-family: 'Merienda', cursive;
   padding:.4rem;
 }
+/* Character Card */
+.character-card-container{
+  display:flex;
+  flex-flow:wrap row;
+  margin:0 auto;
+  width:85%;
+}
 
 /* Pagination*/
 .pagination{
@@ -145,9 +152,18 @@ width:40%;
 }
 
 #spellbook-header p{
+  animation:fadeIn ease 10s;
   font-size:2rem;
   color: #fff;
-  opacity: 25%;
+  opacity: 50%;
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0%
+  }
+  100%{
+    opacity:75%
+  }
 }
 
 #spellbook-header h1 {
@@ -294,6 +310,43 @@ width:40%;
   margin:0 auto;
   margin-top:10rem;
   margin-bottom:5rem;
+}
+
+.mainCharacter-card .card{
+  color:white;
+  background-color:black;
+  animation-duration:5s;
+  animation-name:fadein;
+}
+@keyframes fadein {
+  from {
+    opacity:0%;
+  }
+
+  to {
+    opacity:100%;
+  }
+}
+
+.mainCharacter-card .card-header{
+  font-size:3rem;
+  font-family: 'Permanent Marker', cursive;
+  background-color:#242323;
+ 
+}
+.mainCharacter-card .card-title{
+  font-family: 'Merienda', cursive;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+.mainCharacter-card .card-text{
+  font-family: 'Merienda', cursive;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+.mainCharacter-card .card-text span{
+  font-weight: bold;
 }
 
 

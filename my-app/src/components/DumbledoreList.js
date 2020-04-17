@@ -8,7 +8,7 @@ const characters = useContext(CharacterContext);
 const characterNames = characters.map(item => item.name);
 
   return (
-    <div className="dumbledore-army-container">
+    <div className="character-card-container">
          {!characters 
       ?  <Spinner style={{ width: '3rem', height: '3rem', color:'yellow' }} type="grow" /> 
       : characters.map(character =>(

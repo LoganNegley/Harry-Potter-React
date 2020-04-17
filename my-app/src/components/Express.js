@@ -16,11 +16,11 @@ const characterNames = characters.map(item => item.name);
   <div className='express-wrapper'>
     <div className='hogwartsExpress-wrapper'>
     <h1>Hop on the Hogwarts Express and find your favorite wizard to learn more information about them</h1>
-      <Search characters={characters} searchItem={characterNames}/>
+      <Search characters={characters}/>
         <ul id='express-character-list'>
           {characters.map(item =>(
-            <Link key={item.id} to={`/hogwarts-express-character/${item._id}`}>
-              <li>{item.name}</li>
+            <Link  to={`/hogwarts-express-character/${item._id}`}>
+              <li key={item.id}>{item.name}</li>
             </Link>
         ))}
         </ul>

@@ -23,19 +23,20 @@ fetchCharacter(props.match.params.id)
 
 const handleBack = ()=>{
     props.history.push('/hogwarts-express');
-}
+};
 
     return(
     <div className='mainCharacter-card'>
         <Card>
             <CardHeader> {character.name} </CardHeader>
             <CardBody>
-            <CardTitle>House: {character.house}</CardTitle>
+            <CardTitle>Information</CardTitle>
             <CardText>
-                <p>Role: {character.role}<br/>
-                School: {character.school}<br/>
-                Blood Type: {character.bloodStatus}<br/>
-                Species: {character.species}</p>
+                <span>House:</span> {character.house}<br/>
+                <span>Role:</span> {character.role}<br/>
+                <span>School:</span> {character.school}<br/>
+                <span>Blood Type:</span> {character.bloodStatus}<br/>
+                <span>Species:</span> {character.species}
                 </CardText>
                 <Button onClick={handleBack}>Back</Button>
             </CardBody>
