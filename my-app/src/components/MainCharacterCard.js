@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
+import { Card, Button, CardHeader, CardFooter, CardBody,
+  CardTitle, CardText } from 'reactstrap';
 
 
 const MainCharacterCard = (props) => {
 const[character, setCharacter] = useState({});
-
-console.log(props)
 
 const fetchCharacter = (characterId) => {
     axios
@@ -21,15 +21,26 @@ useEffect(() => {
 fetchCharacter(props.match.params.id)
 },[props.match.params.id]);
 
+const handleBack = ()=>{
+    props.history.push('/hogwarts-express');
+}
+
     return(
-        <div className='mainCharacter-card'>
-            <h1>Name: {character.name}</h1>
-            <p>House Assignment: {character.house}</p>
-            <p>Role: {character.role}</p>
-            <p>School: {character.school}</p>
-            <p>Blood Type: {character.bloodStatus}</p>
-            <p>Species: {character.species}</p>
-        </div>
+    <div className='mainCharacter-card'>
+        <Card>
+            <CardHeader> {character.name} </CardHeader>
+            <CardBody>
+            <CardTitle>House: {character.house}</CardTitle>
+            <CardText>
+                <p>Role: {character.role}<br/>
+                School: {character.school}<br/>
+                Blood Type: {character.bloodStatus}<br/>
+                Species: {character.species}</p>
+                </CardText>
+                <Button onClick={handleBack}>Back</Button>
+            </CardBody>
+        </Card>
+    </div>
     )
 };
 

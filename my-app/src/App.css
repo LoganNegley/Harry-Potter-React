@@ -287,6 +287,15 @@ width:40%;
   font-size:1.5rem;
 }
 
+/* MainCharacter Card */
+.mainCharacter-card{
+  color:black;
+  width:50%;
+  margin:0 auto;
+  margin-top:10rem;
+  margin-bottom:5rem;
+}
+
 
 /* footer */
 footer p{

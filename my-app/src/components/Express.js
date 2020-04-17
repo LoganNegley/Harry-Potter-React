@@ -12,13 +12,11 @@ const characters = useContext(CharacterContext);
 // variables
 const characterNames = characters.map(item => item.name);
 
-console.log(characters)
-
   return (
   <div className='express-wrapper'>
     <div className='hogwartsExpress-wrapper'>
-    <h1>Hop on the Hogwarts Express and find your favorite wizard to learn more information on them</h1>
-      <Search searchItem={characterNames}/>
+    <h1>Hop on the Hogwarts Express and find your favorite wizard to learn more information about them</h1>
+      <Search characters={characters} searchItem={characterNames}/>
         <ul id='express-character-list'>
           {characters.map(item =>(
             <Link key={item.id} to={`/hogwarts-express-character/${item._id}`}>
