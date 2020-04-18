@@ -16,7 +16,6 @@ function CharacterCard(props) {
             <span>School:</span> {props.character.school}
           </CardText>
         </CardBody>
-        <CardFooter>Footer</CardFooter>
       </Card>
     </div>
   );

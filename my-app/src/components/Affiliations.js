@@ -8,7 +8,8 @@ function Affiliations() {
     <>
     <MainCarousel/>
     <div className="affiliations-container">
-      <h2>Welcome Muggles to the Hogwarts world of witchcraft and wizardry</h2>
+      <h2><span className="welcome">Welcome Muggles</span> 
+      to the Hogwarts world of witchcraft and wizardry</h2>
         <section>
           <div className='img'>
             <img
@@ -57,7 +58,7 @@ function Affiliations() {
           </div>
         </section>
     </div>
-    </>
+   </>
   );
 }
 

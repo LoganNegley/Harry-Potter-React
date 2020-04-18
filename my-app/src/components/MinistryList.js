@@ -8,7 +8,7 @@ function MinistryList() {
   const characters = useContext(CharacterContext);
 
   return (
-    <div className="orderOfPhoenix-container">
+    <div className="character-card-container">
       {!characters 
       ?  <Spinner style={{ width: '3rem', height: '3rem', color:'yellow' }} type="grow" /> 
       : characters.map(character =>(

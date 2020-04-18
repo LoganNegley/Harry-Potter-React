@@ -51,6 +51,19 @@ nav button{
   margin-top:4rem;
 }
 
+.affiliations-container .welcome{
+  font-family: 'Permanent Marker', cursive;
+  display:block;
+  font-size: 3rem;
+}
+
+.affiliations-container h2{
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  font-size:2rem;
+}
+
+
 .affiliations-container section{
   display:flex;
 }
@@ -96,8 +109,43 @@ width:40%;
 .character-card-container{
   display:flex;
   flex-flow:wrap row;
-  margin:0 auto;
-  width:85%;
+  justify-content: center;
+  width:90%;
+  margin: 0 auto;
+  ;
+}
+.character-card{
+  margin:1.25rem;
+  width:33%;
+box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.character-card-container .card{
+color:black;
+background-color:#430404;
+}
+.character-card-container .card .card-header {
+  background-color:#B79114;
+  font-size: 1.5rem;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  }
+  .character-card-container .card .card-title{
+    font-family: 'Merienda', cursive;
+    color:white;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: bold;
+
+  } 
+.character-card-container .card .card-text{
+  color:white;
+  font-family: 'Merienda', cursive;
+  font-size: 1rem;
+
+} 
+.character-card-container .card .card-text span{
+  font-weight: bold;
 }
 
 /* Pagination*/
@@ -197,6 +245,8 @@ width:40%;
   height: 150px;
   perspective: 1000px; 
   margin:1rem;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .flip-card-inner {
@@ -233,11 +283,14 @@ width:40%;
 
 .flip-card-back p{
   font-family: 'Cinzel', serif;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .flip-card-back p .name{
-  font-size: 1.65rem;
+  font-size: 1.55rem;
   font-weight: bold;
+  color:black;
 }
 
 .flip-card-back .description{
@@ -252,6 +305,7 @@ width:40%;
   font-size:1.5rem;
   color: white;
   transform: rotateY(180deg);
+
 }
 
 
@@ -310,11 +364,13 @@ width:40%;
   margin:0 auto;
   margin-top:10rem;
   margin-bottom:5rem;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .mainCharacter-card .card{
   color:white;
-  background-color:black;
+  background-color:#430404;
   animation-duration:5s;
   animation-name:fadein;
 }
@@ -331,7 +387,8 @@ width:40%;
 .mainCharacter-card .card-header{
   font-size:3rem;
   font-family: 'Permanent Marker', cursive;
-  background-color:#242323;
+  background-color:#B79114;
+  color:black;
  
 }
 .mainCharacter-card .card-title{
