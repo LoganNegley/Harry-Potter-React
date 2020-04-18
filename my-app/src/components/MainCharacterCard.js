@@ -30,7 +30,7 @@ const handleBack = ()=>{
         <Card>
             <CardHeader> {character.name} </CardHeader>
             <CardBody>
-            <CardTitle>Information</CardTitle>
+            <CardTitle>Profile</CardTitle>
             <CardText>
                 <span>House:</span> {character.house}<br/>
                 <span>Role:</span> {character.role}<br/>

@@ -10,7 +10,7 @@ function CharacterCard(props) {
         <Card>
         <CardHeader>{props.character.name}</CardHeader>
         <CardBody>
-          <CardTitle>Information</CardTitle>
+          <CardTitle>Profile</CardTitle>
           <CardText>
             <span>Role:</span> {props.character.role}<br/>
             <span>School:</span> {props.character.school}
