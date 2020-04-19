@@ -1,21 +1,26 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 function QuestionBox({question, options, selected }){
     const [answer, setAnswer]= useState(options);
-console.log(question)
-console.log(answer)
+    const [count, setCount] = useState(0);
+    const [total, setTotal] = useState(0);
+
 
     return (
         <div className='questionBox'>
             <div className='question'>
                 {question}
             </div>
-            {answer.map((item, index) => (
-                <button key={index}
-                 className='answer-button' 
-                 onClick={(()=>{setAnswer([item])})}
-                  >
-                    {item}
+            {answer.map( item => (
+                <button 
+                key={item.points}
+                className="answerButton"
+                onClick={()=>{
+                    setAnswer([item])
+                    selected(item)
+                }}
+                >
+                    {item.content}
                 </button>
             ))}
         </div>

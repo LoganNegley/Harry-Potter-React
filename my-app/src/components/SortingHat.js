@@ -10,10 +10,11 @@ function SortingHat() {
      setQuestions(quizQuestions); 
   },[]);
 
-  computeAnswer = (answer, points) =>{
-    
-  }
+  const computeAnswer = (answer)=>{
+    setCount(count + answer.points)
+  } 
 
+  console.log(count)
   return (
     <div className='sorting-hat-container'>
       <img src='images/sorting.jpg'/>
@@ -24,7 +25,7 @@ function SortingHat() {
           question={question} 
           options={answers} 
           key={id}
-          selected = {answer => computerAnswer(answer, correct)}
+          selected={answer => computeAnswer(answer)}
           />
         )}
     </div>
