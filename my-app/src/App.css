@@ -406,6 +406,21 @@ background-color:#430404;
   font-weight: bold;
 }
 
+.sorting-hat-container{
+  margin:0 auto;
+  border: solid 2px black;
+  width:50%;
+}
+
+.sorting-hat-container img{
+  width: 100%;
+}
+
+.sorting-hat-container h1{
+  background-color:black;
+  color:white;
+}
+
 
 /* footer */
 footer p{
