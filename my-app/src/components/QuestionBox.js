@@ -1,12 +1,16 @@
 import React, {useState, useEffect} from 'react';
 
-function QuestionBox({question, options, selected }){
+function QuestionBox({question, options, selected, count, reset }){
     const [answer, setAnswer]= useState(options);
-    const [count, setCount] = useState(0);
-    const [total, setTotal] = useState(0);
 
 
-    return (
+    useEffect(() =>{
+        if(count === 0){
+             setAnswer(options)
+        }
+    },[reset])
+
+        return (
         <div className='questionBox'>
             <div className='question'>
                 {question}
@@ -14,7 +18,7 @@ function QuestionBox({question, options, selected }){
             {answer.map( item => (
                 <button 
                 key={item.points}
-                className="answerButton"
+                className="answerButton "
                 onClick={()=>{
                     setAnswer([item])
                     selected(item)
@@ -27,4 +31,4 @@ function QuestionBox({question, options, selected }){
     );
 };
 
-export default QuestionBox
+export default QuestionBox;

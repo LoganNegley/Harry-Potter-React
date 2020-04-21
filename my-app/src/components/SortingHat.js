@@ -5,16 +5,28 @@ import QuestionBox from '../components/QuestionBox';
 function SortingHat() {
   const [questions, setQuestions] = useState([]);
   const [count, setCount] = useState(0);
+  const [reset, setReset] = useState(false);
 
+
+// Set Question from question data
   useEffect(()=>{
      setQuestions(quizQuestions); 
   },[]);
 
+// Functions
   const computeAnswer = (answer)=>{
     setCount(count + answer.points)
-  } 
+  }; 
 
-  console.log(count)
+  const runReset = () =>{
+    setCount(0)
+    setReset(true)
+  };
+
+  const submit = () =>{
+    
+  };
+
   return (
     <div className='sorting-hat-container'>
       <img src='images/sorting.jpg'/>
@@ -26,8 +38,14 @@ function SortingHat() {
           options={answers} 
           key={id}
           selected={answer => computeAnswer(answer)}
+          count={count}
+          reset ={reset}
           />
         )}
+      <div className='buttons'>
+        <button>Submit</button>
+        <button onClick={runReset}>Reset</button>
+      </div>
     </div>
   );
 };
