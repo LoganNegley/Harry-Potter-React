@@ -5,11 +5,13 @@ function QuestionBox({question, options, selected, count, reset }){
 
 
     useEffect(() =>{
-        if(count === 0){
+        if(count === 0 && reset === true){
              setAnswer(options)
         }
+
     },[reset])
 
+console.log(reset)
         return (
         <div className='questionBox'>
             <div className='question'>
