@@ -1,24 +1,39 @@
 import React, {useState, useEffect} from 'react';
+import houses from '../data/houses';
 
-function QuizResults({houses, count}){
+function QuizResults({count}){
 const [selectedHouse, setSelectedHouse] = useState('');
+const [alert, setAlert] = useState()
 
-useEffect(() =>{
-if(count === 5 && count <= 9){
-    setSelectedHouse('Gryffindor')
-} else if(count === 10 || count <= 14){
-    setSelectedHouse('Hufflepuff')
-}else if(count === 15 || count <= 17){
-    setSelectedHouse('Ravenclaw')
-} else if(count >= 18 ){
-    setSelectedHouse('Slytherin')
-}
-},[]);
+useEffect(()=>{
+    houses.map(item =>{
+    if(count === 5 || count <= 8){
+        if(item.houseID === 1){
+            setSelectedHouse(item)}
+        
+        } else if(count === 9 || count <= 13) {
+            if(item.houseID === 2){
+                setSelectedHouse(item)
+            }
+        } else if(count === 14 || count <= 16) {
+            if(item.houseID === 3){
+                setSelectedHouse(item)
+            }
+        } else if(count >= 17) {
+            if(item.houseID === 4){
+                setSelectedHouse(item)
+            }
+    }
+})},[])
+
+
 console.log(count)
     return (
         <div className='quizResults'>
         <h2>Your Hogwarts house is....</h2>
-           {selectedHouse}
+           <h3>{selectedHouse.house}</h3>
+           <p>{selectedHouse.description}</p>
+
         </div>
     );
 };

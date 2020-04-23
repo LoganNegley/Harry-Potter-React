@@ -8,14 +8,13 @@ function QuestionBox({question, options, selected, count, reset }){
         if(count === 0 && reset === true){
              setAnswer(options)
         }
-
     },[reset])
 
-console.log(reset)
+
         return (
         <div className='questionBox'>
             <div className='question'>
-                {question}
+                <h2>{question}</h2>
             </div>
             {answer.map( item => (
                 <button 

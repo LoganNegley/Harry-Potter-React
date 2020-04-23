@@ -406,10 +406,11 @@ background-color:#430404;
   font-weight: bold;
 }
 
+/* Sorting hat */
 .sorting-hat-container{
   margin:0 auto;
-  border: solid 2px black;
-  width:50%;
+  width:85%;
+  border:solid black 2px;
 }
 
 .sorting-hat-container img{
@@ -419,6 +420,71 @@ background-color:#430404;
 .sorting-hat-container h1{
   background-color:black;
   color:white;
+  text-align:center;
+  font-family: 'Cinzel', serif;
+}
+
+.sorting-hat-container .buttons{
+  text-align: center;
+}
+
+.sorting-hat-container .buttons button{
+  margin:1.5rem 1rem;
+  padding:.5rem 2rem;
+  border-radius: 5%;
+  border:solid 1px black;
+  font-family:'Merienda', cursive;
+  background-color:black;
+  color:white;
+
+}
+
+.sorting-hat-container .buttons #reset:hover{
+background-color:red;
+color:black;
+}
+.sorting-hat-container .buttons #submit:hover{
+  background-color:#F3C01B;
+  color:black;
+}
+
+
+/* Sorting hat questionBox */
+.questionBox{
+  text-align: center;
+}
+.questionBox h2{
+  font-size:1.75rem;
+  font-family:'Merienda', cursive;
+}
+.questionBox button{
+  margin:0 1rem;
+  padding:.5rem;
+  border-radius: 20%;
+  border:solid 1px black;
+  font-family:'Merienda', cursive;
+  background-color:black;
+  color:white;
+}
+
+.questionBox button:hover{
+  background-color:#F3C01B;
+  color:black;
+}
+
+.quizResults{
+  margin-left:1.25rem;
+}
+
+.quizResults h2{
+font-size:2rem;
+}
+.quizResults h3{
+  font-size: 2.75rem;
+  text-decoration: underline;
+}
+.quizResults p{
+  font-size:1.25rem;
 }
 
 

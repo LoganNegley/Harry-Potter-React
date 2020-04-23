@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import quizQuestions from '../quizQuestions.js';
+import quizQuestions from '../data/quizQuestions';
 import QuestionBox from '../components/QuestionBox';
 import QuizResults from '../components/QuizResults';
 
@@ -24,7 +24,7 @@ function SortingHat() {
     }
   },[reset])
 
-console.log(count)
+
 // Functions
   const computeAnswer = (answer)=>{
     setCount(count + answer.points)
@@ -36,10 +36,6 @@ console.log(count)
     setToggleAnswer(false)
   };
 
-  const calculatePoints = () => {
-        
-  };
-
   const submit = () =>{
       setToggleAnswer(true)
   };
@@ -47,7 +43,7 @@ console.log(count)
   return (
     <div className='sorting-hat-container'>
       <img src='images/sorting.jpg'/>
-      <h1>Sorting hat quiz</h1>
+      <h1>What house are you in?</h1>
         {toggleAnswer ? 
         <QuizResults 
         count={count}/> :
@@ -63,8 +59,8 @@ console.log(count)
           />
         )}
       <div className='buttons'>
-        <button onClick={submit}>Submit</button>
-        <button onClick={runReset}>Reset</button>
+        <button id='submit' onClick={submit}>Submit</button>
+        <button id='reset' onClick={runReset}>Reset</button>
       </div>
 
     </div>
