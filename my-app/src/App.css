@@ -467,6 +467,10 @@ color:black;
   color:white;
 }
 
+.questionBox .question{
+  margin: 1rem;
+}
+
 .questionBox button:hover{
   background-color:#F3C01B;
   color:black;
@@ -486,6 +490,8 @@ font-size:2rem;
 .quizResults p{
   font-size:1.25rem;
 }
+
+/* Toggle */
 
 
 /* footer */

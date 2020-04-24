@@ -1,11 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import ToggleFavorite from '../components/ToggleFavorite';
 
 
 function Navigation() {
   return (
     <>
     <div className='logo'>The Invisibility Cloak</div>
+    <ToggleFavorite/>
     <div className="navbar-container">
       <nav>
           <Link to='/'>
