@@ -41,27 +41,33 @@ nav button{
 }
 
 /* Toggle favorite */
-.toggle{
+.toggle-container{
   display:flex;
   width:10rem;
   flex-flow:wrap row;
   margin-left:2rem;
 }
-.toggle .button-container{
+.toggle-container .button-container{
   display:flex;
   flex-flow:wrap row;
 }
 .button-container .button{
-  background-color:green;
-  width:3.5rem;
-  height:2rem;
-  border-radius:75%;
   margin-left:.5rem;
+  background: black;
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 40px;
 }
-.button-container .button .inner{
-  width:25%;
-  height:90%;
-  background-color:black;
+.button-container .button .toggle{
+  background: white;
+  border-radius: 50px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
 }
 
 /* Main Carousel */
