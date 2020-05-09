@@ -46,6 +46,12 @@ nav button{
     width:10rem;
   }
 }
+/* Media at 500 */
+@media (max-width: 500px){
+  .navbar-container nav{
+    text-align: center;
+  }
+}
 
 /* Main Carousel */
 .carousel img {
@@ -112,13 +118,36 @@ width:40%;
   font-family: 'Merienda', cursive;
   padding:.4rem;
 }
-
+/* Media at 800 */
 @media (max-width:800px){
   .affiliations-container .img img{
     height:15rem;
   }
 }
-
+/* Media at 500 */
+@media (max-width:500px){
+  .affiliations-container{
+    margin-top:1rem;
+  }
+  .affiliations-container section{
+    display:block;
+  }
+  .affiliations-container section .img{
+    width:85%;
+  }
+  .affiliations-container section .quote{
+    width:85%;
+    margin:0;
+  }
+  .affiliations-container section:nth-of-type(1){
+    margin-left:3rem;
+  }
+  .affiliations-container section:nth-of-type(2){
+    display:flex;
+    flex-direction: column-reverse;
+    margin-left:3rem;
+  }
+}
 /* Character Card */
 .character-card-container{
   display:flex;
@@ -161,6 +190,19 @@ background-color:#430404;
 .character-card-container .card .card-text span{
   font-weight: bold;
 }
+
+@media (max-width:500px){
+  .character-card-container{
+    width:100%;
+  }
+
+  .character-card-container .character-card{
+  margin:1rem .5rem;
+  width:45%;
+  }
+}
+
+
 
 /* Pagination*/
 .pagination{
@@ -216,18 +258,9 @@ background-color:#430404;
 }
 
 #spellbook-header p{
-  animation:fadeIn ease 10s;
   font-size:2rem;
   color: #fff;
   opacity: 50%;
-}
-@keyframes fadeIn{
-  0% {
-    opacity:0%
-  }
-  100%{
-    opacity:75%
-  }
 }
 
 #spellbook-header h1 {
@@ -300,7 +333,6 @@ background-color:#430404;
 .flip-card-back p{
   font-family: 'Cinzel', serif;
   box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .flip-card-back p .name{
@@ -327,6 +359,20 @@ background-color:#430404;
   .spells-container{
     width:100%;
   } 
+  .flip-card{
+    width:100%;
+  }
+ }
+
+ /* Media at 500 */
+ @media (max-width:500px){
+   #spellbook-header{
+     width:95%;
+   }
+   #spellbook-header p {
+    font-size:1.5rem;
+   }
+
  }
 
 
@@ -334,6 +380,7 @@ background-color:#430404;
 .express-wrapper{
   background-image: url('bookImages/express.jpg');
    background-repeat:no-repeat;
+   background-position:center;
 }
 .hogwartsExpress-wrapper .search{
   width:50%;
@@ -395,6 +442,16 @@ background-color:#430404;
   }
 }
 
+/* Media at 500 */
+@media (max-width:500px){
+  #express-character-list{
+    padding:0;
+  }
+  #express-character-list li{
+    font-size:1.1rem;
+  }
+}
+
 /* MainCharacter Card */
 .mainCharacter-card{
   color:black;
@@ -442,6 +499,13 @@ background-color:#430404;
 }
 .mainCharacter-card .card-text span{
   font-weight: bold;
+}
+
+/* Media at 500 */
+@media (max-width:500px){
+  .mainCharacter-card{
+    width:90%;
+  }
 }
 
 /* Sorting hat */
@@ -527,4 +591,11 @@ font-size:2rem;
 }
 .quizResults p{
   font-size:1.25rem;
+}
+
+footer{
+  background-color:black;
+}
+footer p{
+  margin:0;
 }
