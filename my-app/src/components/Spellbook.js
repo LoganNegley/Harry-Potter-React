@@ -11,7 +11,6 @@ const [currentPage, setCurrentPage] =useState(1);
 const [itemsPerPage, setItemsPerPage] = useState(14);
 
 
-
 useEffect(() => {
   setLoading(true);
      axios.get('https://www.potterapi.com/v1/spells?key=$2a$10$Q4u.rpQuXNlJGGU3sga/g.iojAEbxt6kaul2QD6wr.ZqH9u6oh2fS')
