@@ -40,6 +40,13 @@ nav button{
   font-family: 'Merienda', cursive;
 }
 
+/* Nav bar media at 800 */
+@media (max-width: 800px){
+  nav button{
+    width:10rem;
+  }
+}
+
 /* Main Carousel */
 .carousel img {
   height:350px; 
@@ -105,6 +112,13 @@ width:40%;
   font-family: 'Merienda', cursive;
   padding:.4rem;
 }
+
+@media (max-width:800px){
+  .affiliations-container .img img{
+    height:15rem;
+  }
+}
+
 /* Character Card */
 .character-card-container{
   display:flex;
@@ -187,6 +201,8 @@ background-color:#430404;
   background-repeat:no-repeat;
   background-size:cover;
 }
+
+
 
 #spellbook-header{
   width:80%;
@@ -305,9 +321,13 @@ background-color:#430404;
   font-size:1.5rem;
   color: white;
   transform: rotateY(180deg);
-
 }
-
+/* Media at 800 */
+@media (max-width:800px){
+  .spells-container{
+    width:100%;
+  } 
+ }
 
 
 /* Express */
@@ -355,6 +375,24 @@ background-color:#430404;
   font-weight: bold;
   color:black;
   font-size:1.5rem;
+}
+
+/* Media at 800 */
+@media (max-width:800px){
+  .hogwartsExpress-wrapper{
+    width:100%;
+  }
+  .hogwartsExpress-wrapper h1{
+    font-size:1.75rem;
+    margin:1rem;
+    text-align: center;
+  }
+  .hogwartsExpress-wrapper .search{
+ width:85%;
+  }
+  #express-character-list li{
+    font-size:1.22rem;
+  }
 }
 
 /* MainCharacter Card */
@@ -489,12 +527,4 @@ font-size:2rem;
 }
 .quizResults p{
   font-size:1.25rem;
-}
-
-/* Toggle */
-
-
-/* footer */
-footer p{
-  margin:0;
 }
