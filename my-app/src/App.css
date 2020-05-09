@@ -40,6 +40,30 @@ nav button{
   font-family: 'Merienda', cursive;
 }
 
+/* Toggle favorite */
+.toggle{
+  display:flex;
+  width:10rem;
+  flex-flow:wrap row;
+  margin-left:2rem;
+}
+.toggle .button-container{
+  display:flex;
+  flex-flow:wrap row;
+}
+.button-container .button{
+  background-color:green;
+  width:3.5rem;
+  height:2rem;
+  border-radius:75%;
+  margin-left:.5rem;
+}
+.button-container .button .inner{
+  width:25%;
+  height:90%;
+  background-color:black;
+}
+
 /* Main Carousel */
 .carousel img {
   height:350px; 
