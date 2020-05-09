@@ -23,7 +23,6 @@
   display:flex;
   align-items: flex-end;
   justify-content: flex-end;
-
 }
 
 .navbar-container nav{
@@ -244,8 +243,6 @@ background-color:#430404;
   background-size:cover;
 }
 
-
-
 #spellbook-header{
   width:80%;
   margin:0 auto;
@@ -360,7 +357,7 @@ background-color:#430404;
     width:100%;
   } 
   .flip-card{
-    width:100%;
+    width:45%;
   }
  }
 
@@ -372,9 +369,11 @@ background-color:#430404;
    #spellbook-header p {
     font-size:1.5rem;
    }
+   .flip-card{
+     width:100%;
+   }
 
  }
-
 
 /* Express */
 .express-wrapper{
