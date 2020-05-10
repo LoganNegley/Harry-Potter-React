@@ -465,7 +465,7 @@ background-color:#430404;
 .mainCharacter-card .card{
   color:white;
   background-color:#430404;
-  animation-duration:5s;
+  animation-duration:3s;
   animation-name:fadein;
 }
 @keyframes fadein {
