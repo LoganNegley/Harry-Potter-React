@@ -401,7 +401,7 @@ background-color:#430404;
   width:90%;
   margin:0 auto;
   background-color:white;
-  opacity: 40%;
+  opacity: 0.4;
   box-shadow: 15px 10px 30px #710A0D inset;
   height:100%;
 }
@@ -470,11 +470,11 @@ background-color:#430404;
 }
 @keyframes fadein {
   from {
-    opacity:0%;
+    opacity:.0;
   }
 
   to {
-    opacity:100%;
+    opacity:.10;
   }
 }
 
