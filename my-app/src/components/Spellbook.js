@@ -23,6 +23,10 @@ useEffect(() => {
     })
 },[])
 
+useEffect(() =>{
+  window.scrollTo(0,0)
+},[currentPage])
+
 // Change Page
 const paginate = (pageNumber) => setCurrentPage(pageNumber);
 

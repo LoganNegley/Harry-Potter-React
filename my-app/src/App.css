@@ -206,9 +206,19 @@ background-color:#430404;
 /* Pagination*/
 .pagination{
   text-decoration: none;
-  width:60%;
+  width:30%;
   margin:0 auto;
 }
+
+/* Media at 500 */
+@media (max-width:500px){
+.pagination{
+  text-align:center;
+  margin-left:5rem;
+
+}
+}
+
 
 .pagination a{
   background:transparent;
