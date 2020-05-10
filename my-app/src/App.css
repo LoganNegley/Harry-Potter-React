@@ -558,6 +558,14 @@ color:black;
   color:black;
 }
 
+@media (max-width:500px){
+  .sorting-hat-container{
+    width:90%;
+  }
+}
+
+
+
 
 /* Sorting hat questionBox */
 .questionBox{
@@ -584,6 +592,14 @@ color:black;
 .questionBox button:hover{
   background-color:#F3C01B;
   color:black;
+}
+
+/* Media at 500 */
+@media (max-width:500px){
+  .questionBox .answerButton{
+    padding:.2;
+    margin:0 .25rem;
+  }
 }
 
 .quizResults{

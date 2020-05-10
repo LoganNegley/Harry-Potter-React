@@ -1,7 +1,7 @@
 const quizQuestions = [
     {
         id: 1,
-        question:'What number would you pick',
+        question:'What number would you pick?',
         answers: [
             {
                 content: 26,
@@ -24,7 +24,7 @@ const quizQuestions = [
 
     {
         id: 2,
-        question: 'What element best describes you',
+        question: 'What element best describes you?',
         answers:[
             {
                 content: 'Fire',
@@ -48,7 +48,7 @@ const quizQuestions = [
 
     {
         id: 3,
-        question: 'What is your favorite animal',
+        question: 'What is your favorite animal?',
         answers:[
             {
                 content: 'Jaguar',
@@ -72,7 +72,7 @@ const quizQuestions = [
 
     {
         id: 4,
-        question: 'What characteristic best describes you',
+        question: 'What characteristic best describes you?',
         answers:[
             {
                 content: 'Bravery',
@@ -95,7 +95,7 @@ const quizQuestions = [
 
     {
         id: 5,
-        question: 'What is your favorite color',
+        question: 'What is your favorite color?',
         answers:[
             {
                 content: 'Red',
