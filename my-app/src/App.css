@@ -214,8 +214,7 @@ background-color:#430404;
 @media (max-width:500px){
 .pagination{
   text-align:center;
-  margin-left:5rem;
-
+  margin:0;
 }
 }
 
@@ -563,9 +562,6 @@ color:black;
     width:90%;
   }
 }
-
-
-
 
 /* Sorting hat questionBox */
 .questionBox{
