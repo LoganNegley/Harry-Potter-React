@@ -465,15 +465,17 @@ background-color:#430404;
 .mainCharacter-card .card{
   color:white;
   background-color:#430404;
-  animation-duration:3s;
+  animation-duration:6s;
   animation-name:fadein;
 }
 @keyframes fadein {
-  from {
+  0% {
     opacity:0;
   }
-
-  to {
+  50%{
+    opacity:.5
+  }
+  100% {
     opacity:1;
   }
 }
