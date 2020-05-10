@@ -470,11 +470,11 @@ background-color:#430404;
 }
 @keyframes fadein {
   from {
-    opacity:.0;
+    opacity:0;
   }
 
   to {
-    opacity:.10;
+    opacity:1;
   }
 }
 
