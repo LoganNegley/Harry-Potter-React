@@ -1,2 +1,2 @@
 # Harry-Potter-React
-Harry Potter react practice project
+Harry Potter application using React and Harry Potter API
